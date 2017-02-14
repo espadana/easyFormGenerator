@@ -5,8 +5,8 @@ const CORE_MODULES = [
   'ngAnimate',
   'toaster',
   'formly',
-  'formlyBootstrap',
-  'ui.bootstrap',
+  'formlyFoundation',
+  'mm.foundation',
   'nya.bootstrap.select',
   'pascalprecht.translate'
 ];
