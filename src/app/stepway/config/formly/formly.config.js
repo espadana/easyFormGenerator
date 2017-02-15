@@ -15,7 +15,7 @@ function formlyConfig(formlyConfigProvider){
     {
       name: 'richEditor',
       template: richTextTemplate.template,
-      wrapper: ['bootstrapLabel', 'bootstrapHasError']
+      wrapper: ['foundationLabel', 'foundationHasError']
     }
   );
 
@@ -44,7 +44,7 @@ function formlyConfig(formlyConfigProvider){
     {
       name: 'basicSelect',
       template: basicSelectTemplate.template,
-      wrapper: ['bootstrapLabel', 'bootstrapHasError']
+      wrapper: ['foundationLabel', 'foundationHasError']
     }
   );
 
@@ -52,7 +52,7 @@ function formlyConfig(formlyConfigProvider){
     {
       name: 'groupedSelect',
       template: groupedSelectTemplate.template,
-      wrapper: ['bootstrapLabel', 'bootstrapHasError']
+      wrapper: ['foundationLabel', 'foundationHasError']
     }
   );
 
@@ -60,7 +60,7 @@ function formlyConfig(formlyConfigProvider){
   // formlyConfigProvider.setType({
   //     name: 'upload',
   //     extends: 'input',
-  //     wrapper: ['bootstrapLabel', 'bootstrapHasError'],
+  //     wrapper: ['foundationLabel', 'foundationHasError'],
   //     link: function(scope, el, attrs) {
   //       el.on("change", function(changeEvent) {
   //         var file = changeEvent.target.files[0];
@@ -160,7 +160,7 @@ function formlyConfig(formlyConfigProvider){
         }
       }
     },
-    wrapper: ['bootstrapLabel', 'bootstrapHasError'],
+    wrapper: ['foundationLabel', 'foundationHasError'],
     controller: ['$scope', ($scope) => {
       $scope.datepicker = {};
       // make sure the initial value is of type DATE!
