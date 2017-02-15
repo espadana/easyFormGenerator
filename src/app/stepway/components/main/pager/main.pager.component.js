@@ -1,4 +1,4 @@
-export const PAGER_COMPONENT_NAME = 'pager';
+export const PAGER_COMPONENT_NAME = 'edapager';
 
 export const pagerComponent = {
   template: `

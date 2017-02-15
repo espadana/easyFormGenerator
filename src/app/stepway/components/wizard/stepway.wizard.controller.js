@@ -14,7 +14,7 @@ class edaStepWayEasyWizardFormGenController {
     $filter,
     toaster,
     $timeout,
-    $uibModal,
+    $modal,
     $log,
     easyWizardFormStepWayConfig) {
 
@@ -22,7 +22,7 @@ class edaStepWayEasyWizardFormGenController {
     this.$filter = $filter;
     this.toaster = toaster;
     this.$timeout = $timeout;
-    this.$modal = $uibModal;
+    this.$modal = $modal;
     this.$log = $log;
     this.easyWizardFormStepWayConfig = easyWizardFormStepWayConfig;
     this.wizardHandler = WizardHandler;
@@ -146,7 +146,7 @@ const toInject = [
   '$filter',
   'toaster',
   '$timeout',
-  '$uibModal',
+  '$modal',
   '$log',
   'easyWizardFormStepWayConfig',
 ];

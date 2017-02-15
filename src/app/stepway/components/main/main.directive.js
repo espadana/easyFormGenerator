@@ -41,12 +41,12 @@ function edaStepWayEasyFormGenDirective(
                         </step-indicator>
                       </div>
                       <div class="row">
-                        <pager
+                        <edapager
                           configuration="vm.configuration"
                           step-indicators="vm.stepIndicators"
                           next-config-step="vm.nextConfigStep()"
                           previous-config-step="vm.previousConfigStep()">
-                        </pager>
+                        </edapager>
                         <div
                           class="animate-switch-container"
                           ng-switch on="vm.configuration.listConfigStep[vm.configuration.configStepCounter]">

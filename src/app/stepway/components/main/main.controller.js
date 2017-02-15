@@ -20,7 +20,7 @@ class edaStepWayEasyFormGenController {
     $filter,
     toaster,
     $timeout,
-    $uibModal,
+    $modal,
     $log,
     $formlyProxy,
     $modalProxy,
@@ -30,7 +30,7 @@ class edaStepWayEasyFormGenController {
     this.$filter              = $filter;
     this.toaster              = toaster;
     this.$timeout             = $timeout;
-    this.$modal               = $uibModal;
+    this.$modal               = $modal;
     this.$log                 = $log;
     this.$formlyProxy         = $formlyProxy;
     this.$modalProxy          = $modalProxy;
@@ -305,7 +305,7 @@ const toInject = [
   '$filter',
   'toaster',
   '$timeout',
-  '$uibModal',
+  '$modal',
   '$log',
   '$formlyProxy',
   '$modalProxy',

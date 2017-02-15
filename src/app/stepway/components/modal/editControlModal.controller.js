@@ -2,13 +2,13 @@ const EDIT_MODAL_CONTROLLER_NAME     = 'editControlModalController';
 const EDIT_MODAL_CONTROLLERAS_NAME   = 'editControlModCtrl';
 
 class editControlModalController {
-  constructor(  $uibModalInstance,
+  constructor(  $modalInstance,
                 nyaSelect,
                 toaster,
                 selectOptionManage,
                 $modalProxy) {
 
-    this.$modalInstance     = $uibModalInstance;
+    this.$modalInstance     = $modalInstance;
     this.nyaSelect          = nyaSelect;
     this.toaster            = toaster;
     this.selectOptionManage = selectOptionManage;
@@ -404,7 +404,7 @@ class editControlModalController {
 }
 
 const toInject =  [
-  '$uibModalInstance',
+  '$modalInstance',
   'nyaSelect',
   'toaster' ,
   'selectOptionManage',
