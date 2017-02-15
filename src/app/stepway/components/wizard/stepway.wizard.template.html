@@ -12,8 +12,8 @@
                 'timeOut':500
               }">
             </toaster-container>
-            <uib-tabset justified="true">
-              <uib-tab active="vm.tab.editTab.active" heading="{{'EDIT_TAB' | translate}}">
+            <tabset>
+              <tab active="vm.tab.editTab.active" heading="{{'EDIT_TAB' | translate}}">
                 <div class="row">
                   <add-step-content configuration="vm.configuration" 
                     add-newstep="vm.addNewstep()" 
@@ -23,8 +23,8 @@
                     left-this-step="vm.leftThisStep(index)">
                   </add-step-content>
                 </div>
-              </uib-tab>
-              <uib-tab active="vm.tab.previewTab.active" ng-if="vm.tab.previewTab.tabVisible" heading="{{'PREVIEW_TAB' | translate}}">
+              </tab>
+              <tab active="vm.tab.previewTab.active" ng-if="vm.tab.previewTab.tabVisible" heading="{{'PREVIEW_TAB' | translate}}">
                 <div class="panel panel-default">
                   <div class="panel-body">
                     <!-- formly here -->
@@ -75,8 +75,8 @@
                     </pre>
                   </div>
                 </div>
-              </uib-tab>
-            </uib-tabset>
+              </tab>
+            </tabset>
           </div>
         </div>
       </section>
