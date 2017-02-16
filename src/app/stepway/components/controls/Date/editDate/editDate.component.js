@@ -19,7 +19,7 @@ export const editDateControlComponent = {
             <div class="form-group">
               <label
                 for="inputDate"
-                class="control-label textControlLabel">
+                class=" textControlLabel">
                 {{$ctrl.nyaSelect.temporyConfig.formlyLabel}}
                 <span
                   ng-if="$ctrl.nyaSelect.temporyConfig.formlyRequired"
@@ -67,7 +67,7 @@ export const editDateControlComponent = {
         <hr/>
         <div class="row">
           <div class="form-group">
-          <label class="columns medium-3 control-label greyText editPropertiesLabel">
+          <label class="columns medium-3  greyText editPropertiesLabel">
             {{'DATE_FORMAT' | translate}} :
           </label>
           <div class="columns medium-9">
@@ -92,7 +92,7 @@ export const editDateControlComponent = {
         <div class="form-group">
           <label
             for="inputTextLabelUpdate"
-            class="columns medium-3 control-label greyText editPropertiesLabel">
+            class="columns medium-3  greyText editPropertiesLabel">
             {{'LABEL_TEXT' | translate}} :
           </label>
           <div class="columns medium-9">
@@ -110,7 +110,7 @@ export const editDateControlComponent = {
           <div class="form-group">
             <label
               for="inputTextRequiredUpdate"
-              class="columns medium-3 control-label greyText editPropertiesLabel">
+              class="columns medium-3  greyText editPropertiesLabel">
               {{'REQUIRED' | translate}} :
             </label>
             <div class="columns medium-9">
@@ -129,7 +129,7 @@ export const editDateControlComponent = {
           <div class="form-group">
             <label
               for="inputTextDescriptionUpdate"
-              class="columns medium-3 control-label greyText editPropertiesLabel">
+              class="columns medium-3  greyText editPropertiesLabel">
               {{'DESCRIPTION' | translate}} :
             </label>
             <div class="columns medium-9">

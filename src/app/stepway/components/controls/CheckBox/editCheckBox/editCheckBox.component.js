@@ -19,7 +19,7 @@ export const editCheckBoxControlComponent = {
             <div class="form-group">
               <label
                 for="inputDate"
-                class="control-label textControlLabel">
+                class=" textControlLabel">
                 {{$ctrl.nyaSelect.temporyConfig.formlyLabel}}
                 <span
                   ng-if="$ctrl.nyaSelect.temporyConfig.formlyRequired"
@@ -29,8 +29,8 @@ export const editCheckBoxControlComponent = {
               </label>
               <div class="">
                 <div class="input-group" >
-                  <span class="input-group-label">
-                    <i class="glyphicon glyphicon-calendar"></i>
+                  <span class="sinput-group-label">
+                    <i class="fa fa-calendar"></i>
                   </span>
                   <input
                     type="text"
@@ -66,7 +66,7 @@ export const editCheckBoxControlComponent = {
         <hr/>
         <div class="row">
           <div class="form-group">
-          <label class="columns large-3 control-label greyText editPropertiesLabel">
+          <label class="columns large-3  greyText editPropertiesLabel">
             {{'DATE_FORMAT' | translate}} :
           </label>
           <div class="columns large-9">
@@ -91,7 +91,7 @@ export const editCheckBoxControlComponent = {
         <div class="form-group">
           <label
             for="inputTextLabelUpdate"
-            class="columns medium-3 control-label greyText editPropertiesLabel">
+            class="columns medium-3  greyText editPropertiesLabel">
             {{'LABEL_TEXT' | translate}} :
           </label>
           <div class="columns medium-9">
@@ -109,7 +109,7 @@ export const editCheckBoxControlComponent = {
           <div class="form-group">
             <label
               for="inputTextRequiredUpdate"
-              class="columns medium-3 control-label greyText editPropertiesLabel">
+              class="columns medium-3  greyText editPropertiesLabel">
               {{'REQUIRED' | translate}} :
             </label>
             <div class="columns medium-9">
@@ -128,7 +128,7 @@ export const editCheckBoxControlComponent = {
           <div class="form-group">
             <label
               for="inputTextDescriptionUpdate"
-              class="columns medium-3 control-label greyText editPropertiesLabel">
+              class="columns medium-3  greyText editPropertiesLabel">
               {{'DESCRIPTION' | translate}} :
             </label>
             <div class="columns medium-9">

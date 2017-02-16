@@ -17,7 +17,7 @@ export const StepThreeCommandPanelComponent = {
             <div class="form-group">
               <label
                 for="inputSubmitButtontext"
-                class="greyText control-label">
+                class="greyText ">
                 {{'CUSTOM_SUBMIT_BTN' | translate}} :
                 <input
                   type="text"
@@ -34,7 +34,7 @@ export const StepThreeCommandPanelComponent = {
             <div class="form-group">
               <label
                 for="inputCancelButtontext"
-                class=" greyText control-label">
+                class=" greyText ">
                 {{'CUSTOM_CANCEL_BTN' | translate}} :
                 <input
                   type="text"
@@ -52,7 +52,7 @@ export const StepThreeCommandPanelComponent = {
             <div class="form-group">
               <label
                 for="inputNameFormtext"
-                class=" greyText control-label">
+                class=" greyText ">
                 {{'NAME_THIS_FORM' | translate}} :
                 <input
                   type="text"

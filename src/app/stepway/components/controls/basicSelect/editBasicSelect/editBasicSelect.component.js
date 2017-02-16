@@ -20,7 +20,7 @@ export const editBasicSelectControlComponent = {
           <div class="form-group">
             <label
               for="basicSelect"
-              class="control-label textControlLabel">
+              class=" textControlLabel">
               {{$ctrl.nyaSelect.temporyConfig.formlyLabel}}
               <span
                 ng-if="$ctrl.nyaSelect.temporyConfig.formlyRequired"
@@ -68,7 +68,7 @@ export const editBasicSelectControlComponent = {
         <div class="columns small-3">
           <label
             for="basicSelectRowCollection"
-            class=" control-label greyText editPropertiesLabel">
+            class="  greyText editPropertiesLabel">
             {{'ADD_NEW_OPTIONS' | translate}} :
           </label>
         </div>
@@ -96,7 +96,7 @@ export const editBasicSelectControlComponent = {
       </div>
       <div class="row">
         <div class="columns medium-3">
-          <label class=" control-label greyText editPropertiesLabel">
+          <label class="  greyText editPropertiesLabel">
             {{'EDIT_REMOVE_OPTIONS' | translate}} :
           </label>
         </div>
@@ -196,7 +196,7 @@ export const editBasicSelectControlComponent = {
           <div class="">
             <label
               for="inputTextRequiredUpdate"
-              class="columns medium-3 control-label greyText editPropertiesLabel">
+              class="columns medium-3  greyText editPropertiesLabel">
               Required :
             </label>
             <div class="columns large-3">
@@ -215,7 +215,7 @@ export const editBasicSelectControlComponent = {
           <div class="">
             <label
               for="inputTextDescriptionUpdate"
-              class="columns medium-3 control-label greyText editPropertiesLabel">
+              class="columns medium-3  greyText editPropertiesLabel">
               {{'DESCRIPTION' | translate}} :
             </label>
             <div class="columns medium-9">

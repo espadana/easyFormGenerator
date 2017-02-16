@@ -57,7 +57,7 @@ export const editRichTextEditorControlComponent = {
           <div class="form-group">
             <label
               for="inputTextRequiredUpdate"
-              class="columns medium-3 control-label greyText editPropertiesLabel">Required :
+              class="columns medium-3  greyText editPropertiesLabel">Required :
             </label>
             <div class="columns medium-9">
               <div class="checkboxCssCorrection">
@@ -74,7 +74,7 @@ export const editRichTextEditorControlComponent = {
           <div class="form-group">
             <label
               for="inputTextDescriptionUpdate"
-              class="columns medium-3 control-label greyText editPropertiesLabel">
+              class="columns medium-3  greyText editPropertiesLabel">
               {{'DESCRIPTION' | translate}} :
             </label>
             <div class="columns medium-9">

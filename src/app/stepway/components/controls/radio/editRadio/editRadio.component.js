@@ -19,7 +19,7 @@ export const editRadioControlComponent = {
           <div class="form-group">
             <label
               for="basicSelect"
-              class="control-label textControlLabel">
+              class=" textControlLabel">
               {{$ctrl.nyaSelect.temporyConfig.formlyLabel}}
               <span
                 ng-if="$ctrl.nyaSelect.temporyConfig.formlyRequired"
@@ -67,7 +67,7 @@ export const editRadioControlComponent = {
         <div class="columns medium-3">
           <label
             for="radioRowCollection"
-            class=" control-label greyText editPropertiesLabel">
+            class="  greyText editPropertiesLabel">
             {{'ADD_NEW_RADIO' | translate}} :
           </label>
         </div>
@@ -180,7 +180,7 @@ export const editRadioControlComponent = {
           <div class="form-group">
             <label
               for="inputTextLabelUpdate"
-              class="columns medium-3 control-label greyText editPropertiesLabel">{{'LABEL_TEXT' | translate}} :
+              class="columns medium-3  greyText editPropertiesLabel">{{'LABEL_TEXT' | translate}} :
             </label>
             <div class="columns medium-9">
               <input
@@ -197,7 +197,7 @@ export const editRadioControlComponent = {
           <div class="form-group">
             <label
               for="inputTextRequiredUpdate"
-              class="columns medium-3 control-label greyText editPropertiesLabel">{{'REQUIRED' | translate}} :
+              class="columns medium-3  greyText editPropertiesLabel">{{'REQUIRED' | translate}} :
             </label>
             <div class="columns medium-9">
               <div class="checkboxCssCorrection">
@@ -215,7 +215,7 @@ export const editRadioControlComponent = {
           <div class="form-group">
             <label
               for="inputTextDescriptionUpdate"
-              class="columns medium-3 control-label greyText editPropertiesLabel">{{'DESCRIPTION' | translate}} :
+              class="columns medium-3  greyText editPropertiesLabel">{{'DESCRIPTION' | translate}} :
             </label>
             <div class="columns medium-9">
               <input

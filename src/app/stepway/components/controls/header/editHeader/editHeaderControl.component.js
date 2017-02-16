@@ -44,7 +44,7 @@ export const editHeaderControlComponent = {
         <div class="form-group">
           <label
             for="inputHeaderTextUpdate"
-            class="columns medium-3 control-label greyText editPropertiesLabel">
+            class="columns medium-3  greyText editPropertiesLabel">
             {{'HEADER_TEXT' | translate}} :
           </label>
           <div class="columns medium-9">
@@ -62,7 +62,7 @@ export const editHeaderControlComponent = {
         <div class="form-group">
           <label
             for="inputTextDescriptionUpdate"
-            class="columns medium-3 control-label greyText editPropertiesLabel">
+            class="columns medium-3  greyText editPropertiesLabel">
             {{'DESCRIPTION' | translate}} :
           </label>
           <div class="columns medium-3">

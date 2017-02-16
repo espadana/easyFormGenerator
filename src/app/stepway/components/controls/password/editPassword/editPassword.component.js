@@ -58,7 +58,7 @@ export const editPasswordControlComponent = {
         <div class="form-group">
           <label
             for="inputTextLabelUpdate"
-            class="columns medium-3 control-label greyText editPropertiesLabel">
+            class="columns medium-3  greyText editPropertiesLabel">
             {{'LABEL_TEXT' | translate}} :
           </label>
           <div class="columns medium-9">
@@ -76,7 +76,7 @@ export const editPasswordControlComponent = {
         <div class="form-group">
           <label
             for="inputTextplaceholderUpdate"
-            class="columns medium-3 control-label greyText editPropertiesLabel">
+            class="columns medium-3  greyText editPropertiesLabel">
             {{'PLACEHOLDER' | translate}} :
           </label>
           <div class="columns medium-9">
@@ -94,7 +94,7 @@ export const editPasswordControlComponent = {
         <div class="form-group">
           <label
             for="inputTextRequiredUpdate"
-            class="columns medium-3 control-label greyText editPropertiesLabel">
+            class="columns medium-3  greyText editPropertiesLabel">
             {{'REQUIRED' | translate}} :
           </label>
           <div class="columns medium-9">
@@ -113,7 +113,7 @@ export const editPasswordControlComponent = {
         <div class="form-group">
           <label
             for="inputTextDescriptionUpdate"
-            class="columns medium-3 control-label greyText editPropertiesLabel">
+            class="columns medium-3  greyText editPropertiesLabel">
             {{'DESCRIPTION' | translate}} :
           </label>
           <div class="columns medium-9">

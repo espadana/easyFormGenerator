@@ -20,7 +20,7 @@ export const editGroupedSelectControlComponent = {
           <div class="form-group">
             <label
               for="select"
-              class="control-label textControlLabel">
+              class=" textControlLabel">
               {{$ctrl.nyaSelect.temporyConfig.formlyLabel}}
               <span
                 ng-if="$ctrl.nyaSelect.temporyConfig.formlyRequired"
@@ -75,7 +75,7 @@ export const editGroupedSelectControlComponent = {
         <div class="columns medium-3">
           <label
             for="groupedSelectRowCollection"
-            class=" control-label greyText editPropertiesLabel">
+            class="  greyText editPropertiesLabel">
             {{'ADD_NEW_OPTIONS' | translate}} :
           </label>
         </div>
@@ -105,7 +105,7 @@ export const editGroupedSelectControlComponent = {
         <div class="columns medium-3">
           <label
             for="groupedSelectRowCollection"
-            class=" control-label greyText editPropertiesLabel">
+            class="  greyText editPropertiesLabel">
             {{'ADD_NEW_GROUPS' | translate}} :
           </label>
         </div>
@@ -133,7 +133,7 @@ export const editGroupedSelectControlComponent = {
       </div>
       <div class="row">
         <div class="columns medium-3">
-          <label  class=" control-label greyText editPropertiesLabel">
+          <label  class="  greyText editPropertiesLabel">
             {{'EDIT_GROUPS_OPTIONS' | translate}} :
           </label>
         </div>
@@ -250,7 +250,7 @@ export const editGroupedSelectControlComponent = {
       <div class="form-group">
         <label
           for="inputTextLabelUpdate"
-          class="columns medium-3 control-label greyText editPropertiesLabel">
+          class="columns medium-3  greyText editPropertiesLabel">
           {{'LABEL_TEXT' | translate}} :
         </label>
         <div class="columns medium-9">
@@ -269,7 +269,7 @@ export const editGroupedSelectControlComponent = {
       <div class="form-group">
         <label
           for="inputTextDescriptionUpdate"
-          class="columns medium-3 control-label greyText editPropertiesLabel">
+          class="columns medium-3  greyText editPropertiesLabel">
           {{'DESCRIPTION' | translate}} :
         </label>
         <div class="columns medium-9">
