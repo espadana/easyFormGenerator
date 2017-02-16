@@ -30,8 +30,8 @@ function edaStepWayEasyFormGenDirective(
                       'timeOut':500
                     }">
                   </toaster-container>
-                  <uib-tabset justified="true">
-                    <uib-tab
+                  <tabset>
+                    <tab
                       active="vm.tab.editTab.active"
                       heading="{{'EDIT_TAB' | translate}}">
                       <div class="row">
@@ -77,8 +77,8 @@ function edaStepWayEasyFormGenDirective(
                           </step-three-content>
                         </div>
                       </div>
-                    </uib-tab>
-                    <uib-tab
+                    </tab>
+                    <tab
                       active="vm.tab.previewTab.active"
                       ng-if="vm.tab.previewTab.tabVisible && !vm.configuration.isWizard"
                       heading="{{'PREVIEW_TAB' | translate}}">
@@ -126,8 +126,8 @@ function edaStepWayEasyFormGenDirective(
                           </pre>
                         </div>
                       </div>
-                    </uib-tab>
-                  </uib-tabset>
+                    </tab>
+                  </tabset>
                 </div>
               </div>
             </section>
