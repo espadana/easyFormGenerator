@@ -14,7 +14,7 @@ export const StepThreeCommandPanelComponent = {
       <div class="card-section">
         <div class="row">
           <div class="column small-12">
-            <div class="form-group">
+            <div >
               <label
                 for="inputSubmitButtontext"
                 class="greyText ">
@@ -31,7 +31,7 @@ export const StepThreeCommandPanelComponent = {
         <hr/>
         <div class="row">
           <div class="columns small-12">
-            <div class="form-group">
+            <div >
               <label
                 for="inputCancelButtontext"
                 class=" greyText ">
@@ -49,7 +49,7 @@ export const StepThreeCommandPanelComponent = {
         <hr/>
         <div class="row">
           <div class="columns small-12">
-            <div class="form-group">
+            <div >
               <label
                 for="inputNameFormtext"
                 class=" greyText ">
