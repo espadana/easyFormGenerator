@@ -19,9 +19,9 @@ export const StepZeroCommandPanelComponent = {
             </span>
             &nbsp;
             <button
-              class="button primary"
+              class="button"
               ng-click="$ctrl.addNewline()">
-              <i class="fa fa-plus fa-1x"></i>
+              <i class="fa fa-plus"></i>
             </button>
           </div>
         </div>

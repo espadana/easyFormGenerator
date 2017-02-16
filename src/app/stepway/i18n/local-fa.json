@@ -25,7 +25,7 @@
     "APPLY_CTRL2COL"      : "ثبت کنترل در ستون",
 
     "CLIC_TAP_2_OPEN"     : "برای نمایش کنترل انتخاب شده بر روی ستوا کلیک کنید",
-    "SELECT_2_APPLY_COL"  : "Select desired control and valid to apply it to column",
+    "SELECT_2_APPLY_COL"  : "المان فرم مورد نظر را که صحیح هستند انتخاب کنید تا به ستون افزوده شوند.",
 
     "CUSTOM_SUBMIT_BTN"   : "شخصی شازی متن دکمه تایید",
     "CUSTOM_CANCEL_BTN"   : "شحصی سازی متن دکمه انصراف",
@@ -34,8 +34,8 @@
 
     "FINAL_STEP"          : "مرحله نهایی : نمایش فرم",
 
-    "DATA_MODEL"          : "DATA MODEL",
-    "FIELDS_MODEL"        : "FIELDS MODEL (Ready to save to database one)",
+    "DATA_MODEL"          : "مدل داده",
+    "FIELDS_MODEL"        : "مدل المان ها",
 
 
     "SELECT_A_CTRL"       : "انتخاب یک کنترل",
@@ -66,10 +66,10 @@
 
     "DATE_FORMAT"         : "فرمت تاریخ",
 
-    "ADD_NEW_RADIO"       : "افرودن دکمه radio",
-    "ADD_RADIO_PLACEHOLD" : "افرودن دکمه radio",
-    "EDIT_REMOVE_RADIO"   : "افزودن ویرایش دکمه radio",
-    "NO_RADIO_ADD_NEW"    : "افزودن مقادیر برای radio",
+    "ADD_NEW_RADIO"       : "افرودن دکمه Radio",
+    "ADD_RADIO_PLACEHOLD" : "افرودن دکمه Radio",
+    "EDIT_REMOVE_RADIO"   : "افزودن ویرایش دکمه Radio",
+    "NO_RADIO_ADD_NEW"    : "افزودن مقادیر برای Radio",
 
     "SEARCH_4_OPTION"     : "جستوجو در گزینه ها",
 

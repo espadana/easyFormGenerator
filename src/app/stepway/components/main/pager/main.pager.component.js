@@ -7,8 +7,8 @@ export const pagerComponent = {
       <button
           class="button primary customPagerButton"
           ng-click="$ctrl.previousConfigStep()" >
-        <i class="fa fa-arrow-left fa-2x float-left"></i>
-        <span class="float-right">
+        <i class="fa fa-arrow-right fa-2x float-right"></i>
+        <span class="float-left">
           {{'PAGER_PREVIOUS' | translate}}
         </span>
       </button>
@@ -19,10 +19,10 @@ export const pagerComponent = {
       <button
         class="button primary customPagerButton"
         ng-click="$ctrl.nextConfigStep()">
-        <span class="float-left">
+        <span class="float-right">
           {{'PAGER_NEXT' | translate}}
         </span>
-        <i class="fa fa-arrow-right fa-2x float-right"></i>
+        <i class="fa fa-arrow-left fa-2x float-left"></i>
       </button>
     </li>
   </ul>

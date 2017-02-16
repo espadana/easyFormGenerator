@@ -38,7 +38,7 @@ export const StepZeroVisualPanelComponent = {
                     <i class="fa fa-arrow-down"></i>
                   </button>
                   <button
-                    class="button alert float-right"
+                    class="button alert float-left"
                     ng-click="$ctrl.removeThisLine({index: $index})">
                     <i class="fa fa-trash-o"></i>
                   </button>
@@ -71,7 +71,7 @@ export const StepZeroVisualPanelComponent = {
                     <i class="fa fa-arrow-down"></i>
                   </button>
                   <button
-                    class="button alert float-right"
+                    class="button alert float-left"
                     ng-click="$ctrl.removeThisLine({index: $index})">
                     <i class="fa fa-trash-o"></i>
                   </button>
@@ -108,7 +108,7 @@ export const StepZeroVisualPanelComponent = {
                     <i class="fa fa-arrow-down"></i>
                   </button>
                   <button
-                    class="button alert float-right"
+                    class="button alert float-left"
                     ng-click="$ctrl.removeThisLine({index: $index})">
                     <i class="fa fa-trash-o"></i>
                   </button>
