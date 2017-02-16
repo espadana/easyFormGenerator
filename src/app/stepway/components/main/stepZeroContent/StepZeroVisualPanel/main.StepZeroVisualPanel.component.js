@@ -3,15 +3,15 @@ export const STEP_ZERO_VISUAL_PANEL_COMPONENT_NAME = 'stepZeroVisualPanel';
 export const StepZeroVisualPanelComponent = {
   template: `
   <div id="visualPanel">
-    <div  class="panel panel-default">
-      <div class="panel-heading">
-        <h3 class="panel-title">
+    <div  class="card">
+      <div class="card-divider">
+        <h3>
           <i class="fa fa-eye"></i>
           &nbsp;
           {{'VISUAL_PANEL' | translate}}
         </h3>
       </div>
-      <div class="panel-body">
+      <div class="card-section">
         <!-- lines -->
         <ul class="list-group">
           <li
@@ -23,30 +23,30 @@ export const StepZeroVisualPanelComponent = {
                 class="row linesList"
                 ng-switch-when="1">
                 <div
-                  class="col-md-12 lineCommandButtons"
+                  class="columns medium-12 lineCommandButtons"
                   ng-show="$ctrl.configuration.lines.length > 1">
                   <button
-                    class="btn btn-warning"
+                    class="button warning"
                     ng-hide="$index==0"
                     ng-click="$ctrl.upThisLine({index: $index})">
                     <i class="fa fa-arrow-up"></i>
                   </button>
                   <button
-                    class="btn btn-warning"
+                    class="button warning"
                     ng-hide="$index==($ctrl.configuration.lines.length-1)"
                     ng-click="$ctrl.downThisLine({index: $index})">
                     <i class="fa fa-arrow-down"></i>
                   </button>
                   <button
-                    class="btn btn-danger pull-right"
+                    class="button alert float-right"
                     ng-click="$ctrl.removeThisLine({index: $index})">
                     <i class="fa fa-trash-o"></i>
                   </button>
                 </div>
-                <div class="col-md-12">
-                  <div class="col-md-12 well">
+                <div class="columns medium-12">
+                  <div class="columns medium-12 callout">
                     <button
-                      class="btn btn-lg btn-block  btn-default disabled">
+                      class="button expanded large disabled">
                       {{line.columns[0].control.type !== 'none'  ? line.columns[0].control.type + ' ' + line.columns[0].control.subtype || '' : 'column 1'}}
                     </button>
                   </div>
@@ -56,34 +56,34 @@ export const StepZeroVisualPanelComponent = {
                 class="row linesList"
                 ng-switch-when="2">
                 <div
-                  class="col-md-12 lineCommandButtons"
+                  class="columns medium-12 lineCommandButtons"
                   ng-show="$ctrl.configuration.lines.length > 1">
                   <button
-                    class="btn btn-warning"
+                    class="button warning"
                     ng-hide="$index==0"
                     ng-click="$ctrl.upThisLine({index: $index})">
                     <i class="fa fa-arrow-up"></i>
                   </button>
                   <button
-                    class="btn btn-warning"
+                    class="button warning"
                     ng-hide="$index==($ctrl.configuration.lines.length-1)"
                     ng-click="$ctrl.downThisLine({index: $index})">
                     <i class="fa fa-arrow-down"></i>
                   </button>
                   <button
-                    class="btn btn-danger pull-right"
+                    class="button alert float-right"
                     ng-click="$ctrl.removeThisLine({index: $index})">
                     <i class="fa fa-trash-o"></i>
                   </button>
                 </div>
-                <div class="col-md-12">
-                  <div class="col-md-6 well">
-                    <button class="btn btn-lg btn-block  btn-default disabled">
+                <div class="columns medium-12">
+                  <div class="columns medium-6 callout">
+                    <button class="button large expanded disabled">
                         {{line.columns[0].control.type !== 'none'  ? line.columns[0].control.type + ' ' + line.columns[0].control.subtype || '' : 'column 1'}}
                     </button>
                   </div>
-                  <div class="col-md-6 well">
-                    <button class="btn btn-lg btn-block  btn-default disabled">
+                  <div class="columns medium-6 callout">
+                    <button class="button large expanded disabled">
                         {{line.columns[1].control.type !== 'none'  ? line.columns[1].control.type + ' ' + line.columns[1].control.subtype || '' : 'column 2'}}
                     </button>
                   </div>
@@ -93,42 +93,41 @@ export const StepZeroVisualPanelComponent = {
                 class="row linesList"
                 ng-switch-when="3">
                 <div
-                  class="col-md-12 lineCommandButtons"
+                  class="columns medium-12 lineCommandButtons"
                   ng-show="$ctrl.configuration.lines.length > 1">
                   <button
-                    class="btn btn-warning"
+                    class="button warning"
                     ng-hide="$index==0"
                     ng-click="$ctrl.upThisLine({index: $index})">
                     <i class="fa fa-arrow-up"></i>
                   </button>
                   <button
-                    class="btn btn-warning"
+                    class="button warning"
                     ng-hide="$index==($ctrl.configuration.lines.length-1)"
                     ng-click="$ctrl.downThisLine({index: $index})">
                     <i class="fa fa-arrow-down"></i>
                   </button>
                   <button
-                    class="btn btn-danger
-                    pull-right"
+                    class="button alert float-right"
                     ng-click="$ctrl.removeThisLine({index: $index})">
                     <i class="fa fa-trash-o"></i>
                   </button>
                 </div>
-                <div class="col-md-12">
-                  <div class="col-md-4 well">
-                    <button class="btn btn-lg btn-block  btn-default disabled">
+                <div class="columns medium-12">
+                  <div class="columns medium-4 callout">
+                    <button class="button large expanded disabled">
                       {{line.columns[0].control.type !== 'none'  ? line.columns[0].control.type + ' ' + line.columns[0].control.subtype || '' : 'column 1'}}
                     </button>
                   </div>
-                  <div class="col-md-4 well">
+                  <div class="columns medium-4 callout">
                     <button
-                      class="btn btn-lg btn-block  btn-default disabled">
+                      class="button expanded large disabled">
                       {{line.columns[1].control.type !== 'none'  ? line.columns[1].control.type + ' ' + line.columns[1].control.subtype || '' : 'column 2'}}
                     </button>
                 </div>
-                <div class="col-md-4 well">
+                <div class="columns medium-4 callout">
                   <button
-                    class="btn btn-lg btn-block  btn-default disabled">
+                    class="button large expanded disabled">
                     {{line.columns[2].control.type !== 'none'  ? line.columns[2].control.type + ' ' + line.columns[2].control.subtype || '' : 'column 3'}}
                   </button>
                 </div>

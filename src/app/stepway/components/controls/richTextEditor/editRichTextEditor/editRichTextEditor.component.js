@@ -2,10 +2,10 @@ export const EDIT_RICH_TEXT_EDITOR_COMPONENT = 'editRichTextEditorControl';
 
 export const editRichTextEditorControlComponent = {
   template: `
-    <div class="panel panel-default">
-      <div class="panel-body">
+    <div class="card">
+      <div class="card-section">
         <div class="row">
-          <div class="col-md-12">
+          <div class="columns medium-12">
             <h5 class="greyText">
               <i class="fa fa-eye"></i>
               &nbsp;
@@ -15,11 +15,11 @@ export const editRichTextEditorControlComponent = {
         </div>
         <hr/>
         <div class="row">
-          <div class="col-md-12">
+          <div class="columns medium-12">
             <div class="form-group">
               <label
                 for="RichTextEditor"
-                class="control-label textControlLabel">
+                class="textControlLabel">
                 {{$ctrl.nyaSelect.temporyConfig.formlyLabel}}
                 <span
                   ng-if="$ctrl.nyaSelect.temporyConfig.formlyRequired"
@@ -31,7 +31,7 @@ export const editRichTextEditorControlComponent = {
                 <text-angular
                   ng-model="$ctrl.model[options.key]">
                 </text-angular>
-                <p class="help-block">
+                <p class="help-text">
                   {{$ctrl.nyaSelect.temporyConfig.formlyDescription}}
                 </p>
               </div>
@@ -40,10 +40,10 @@ export const editRichTextEditorControlComponent = {
         </div>
       </div>
     </div>
-    <div class="panel panel-default">
-      <div class="panel-body">
+    <div class="card">
+      <div class="card-section">
         <div class="row">
-          <div class="col-md-12">
+          <div class="columns medium-12">
             <h5 class="greyText">
               <i class="fa fa-pencil-square-o"></i>
               &nbsp;
@@ -57,9 +57,9 @@ export const editRichTextEditorControlComponent = {
           <div class="form-group">
             <label
               for="inputTextRequiredUpdate"
-              class="col-lg-3 control-label greyText editPropertiesLabel">Required :
+              class="columns medium-3 control-label greyText editPropertiesLabel">Required :
             </label>
-            <div class="col-lg-9">
+            <div class="columns medium-9">
               <div class="checkboxCssCorrection">
                 &nbsp;
               </div>
@@ -74,10 +74,10 @@ export const editRichTextEditorControlComponent = {
           <div class="form-group">
             <label
               for="inputTextDescriptionUpdate"
-              class="col-lg-3 control-label greyText editPropertiesLabel">
+              class="columns medium-3 control-label greyText editPropertiesLabel">
               {{'DESCRIPTION' | translate}} :
             </label>
-            <div class="col-lg-9">
+            <div class="columns medium-9">
               <input
                 type="text"
                 class="form-control"

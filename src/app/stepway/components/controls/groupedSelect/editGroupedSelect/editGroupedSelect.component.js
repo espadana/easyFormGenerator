@@ -2,10 +2,10 @@ export const EDIT_GROUPED_SELECT_COMPONENT = 'editGroupedSelectControl';
 
 export const editGroupedSelectControlComponent = {
   template: `
-    <div class="panel panel-default">
-    <div class="panel-body">
+    <div class="card">
+    <div class="card-section">
       <div class="row">
-        <div class="col-md-12">
+        <div class="columns medium-12">
           <h5
             class="greyText">
             <i class="fa fa-eye"></i>
@@ -16,7 +16,7 @@ export const editGroupedSelectControlComponent = {
       </div>
       <hr/>
       <div class="row">
-        <div class="col-md-12">
+        <div class="columns medium-12">
           <div class="form-group">
             <label
               for="select"
@@ -30,7 +30,7 @@ export const editGroupedSelectControlComponent = {
             </label>
             <div class="">
               <ol
-                class="nya-bs-select col-sm-12 col-xs-12 col-md-12 col-lg12"
+                class="nya-bs-select columns small-12"
                 ng-model="modelGroupedSelect"
                 data-live-search="true"
                 disabled="$ctrl.groupedSelectRowCollection.rows.length === 0">
@@ -49,7 +49,7 @@ export const editGroupedSelectControlComponent = {
                   </a>
                 </li>
               </ol>
-              <p class="help-block">
+              <p class="help-text">
                 {{$ctrl.nyaSelect.temporyConfig.formlyDescription}}
               </p>
             </div>
@@ -58,10 +58,10 @@ export const editGroupedSelectControlComponent = {
       </div>
     </div>
   </div>
-  <div class="panel panel-default">
-    <div class="panel-body">
+  <div class="card">
+    <div class="card-section">
       <div class="row">
-        <div class="col-md-12">
+        <div class="columns medium-12">
           <h5
             class="greyText">
             <i class="fa fa-pencil-square-o"></i>
@@ -72,7 +72,7 @@ export const editGroupedSelectControlComponent = {
       </div>
       <hr/>
       <div class="row">
-        <div class="col-lg-3 col-md-3">
+        <div class="columns medium-3">
           <label
             for="groupedSelectRowCollection"
             class=" control-label greyText editPropertiesLabel">
@@ -83,7 +83,7 @@ export const editGroupedSelectControlComponent = {
       <div class="row">
         <div>
           <div class="form-group">
-            <div class="col-sm-9 col-xs-9 col-md-9 col-lg-9">
+            <div class="columns medium-9">
               <input
                 type="text"
                 class="form-control"
@@ -91,9 +91,9 @@ export const editGroupedSelectControlComponent = {
                 placeholder="{{'ADD_A_NEW_OPTION' | translate}}"
                 ng-model="$ctrl.newOptionGroupedSelect.saisie">
             </div>
-            <div class="col-sm-3 col-xs-3 col-md-3 col-lg-3">
+            <div class="columns medium-3">
               <button
-                class="btn btn-primary"
+                class="button primary"
                 ng-click="$ctrl.addNewOptionGroupedSelect()">
                 {{'ADD' | translate}}
               </button>
@@ -102,7 +102,7 @@ export const editGroupedSelectControlComponent = {
         </div>
       </div>
       <div class="row">
-        <div class="col-lg-3 col-md-3">
+        <div class="columns medium-3">
           <label
             for="groupedSelectRowCollection"
             class=" control-label greyText editPropertiesLabel">
@@ -113,7 +113,7 @@ export const editGroupedSelectControlComponent = {
       <div class="row">
         <div>
           <div class="form-group">
-            <div class="col-sm-9 col-xs-9 col-md-9 col-lg-9">
+            <div class="columns medium-9">
               <input
                 id="inputAddNewGroupGroupedOption"
                 type="text"
@@ -121,9 +121,9 @@ export const editGroupedSelectControlComponent = {
                 ng-model="$ctrl.newGroupGroupedSelect.saisie" id="inputTextLabelUpdateGroupedSelect"
                 placeholder="{{'ADD_A_NEW_GROUP' | translate}}">
             </div>
-            <div class="col-sm-3 col-xs-3 col-md-3 col-lg-3">
+            <div class="columns small-3">
               <button
-                class="btn btn-primary"
+                class="button primary"
                 ng-click="$ctrl.addNewGroupToGroupedSelect()">
                 {{'ADD' | translate}}
               </button>
@@ -132,7 +132,7 @@ export const editGroupedSelectControlComponent = {
         </div>
       </div>
       <div class="row">
-        <div class="col-lg-3 col-md-3">
+        <div class="columns medium-3">
           <label  class=" control-label greyText editPropertiesLabel">
             {{'EDIT_GROUPS_OPTIONS' | translate}} :
           </label>
@@ -140,7 +140,7 @@ export const editGroupedSelectControlComponent = {
       </div>
       <div class="row">
         <div class="form-group">
-          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <div class="columns small-3">
             <div class="container">
               <div ng-if="$ctrl.groupedSelectRowCollection.rows.length === 0">
                 <h5 class="text-center greyText">
@@ -151,7 +151,7 @@ export const editGroupedSelectControlComponent = {
               </div>
               <table
                 ng-if="$ctrl.groupedSelectRowCollection.rows.length > 0"
-                class="table table-striped">
+                class="table-scroll stack hover">
                 <thead>
                   <tr>
                     <th st-ratio="20">
@@ -175,7 +175,6 @@ export const editGroupedSelectControlComponent = {
                       <input
                         ng-model="$ctrl.groupedSelectFilter"
                         placeholder="{{'SEARCH_4_OPTION' | translate}}"
-                        class="input-sm form-control"
                         type="search"
                       />
                     </th>
@@ -195,7 +194,7 @@ export const editGroupedSelectControlComponent = {
                         </div>
                         <div ng-if="$ctrl.groupedSelectGroups.list.length > 0">
                           <ol
-                            class="nya-bs-select col-sm-12 col-xs-12 col-md-12 col-lg12 editGroupedSelectnyaSelect"
+                            class="nya-bs-select columns medium-12 editGroupedSelectnyaSelect"
                             ng-model="groupedSelectRow.group"
                             id="modelGroupedOptionGroupedChoose"
                             disabled="$ctrl.groupedSelectGroups.list.length === 0">
@@ -216,24 +215,24 @@ export const editGroupedSelectControlComponent = {
                       {{groupedSelectRow.option}}
                     </td>
                     <td st-ratio="25">
-                      <div class="pull-right">
+                      <div class="float-right">
                         <button
-                          class="btn btn-primary"
+                          class="button primary"
                           ng-click="$ctrl.upThisGroupedSelectRow({index: $index})">
                           <i class="fa fa-arrow-up"></i>
                         </button>
                         <button
-                          class="btn btn-primary"
+                          class="button primary"
                           ng-click="$ctrl.downThisGroupedSelectRow({index: $index})">
                           <i class="fa fa-arrow-down"></i>
                         </button>
                         <button
-                          class="btn btn-warning"
+                          class="button warning"
                           ng-click="$ctrl.showGroupListToChoose()">
                           <i class="fa fa-pencil-square-o"></i>
                         </button>
                         <button
-                          class="btn btn-danger"
+                          class="button alert"
                           ng-click="$ctrl.removeGroupedSelectRow({index: $index})">
                           <i class="fa fa-trash-o"></i>
                         </button>
@@ -251,10 +250,10 @@ export const editGroupedSelectControlComponent = {
       <div class="form-group">
         <label
           for="inputTextLabelUpdate"
-          class="col-lg-3 control-label greyText editPropertiesLabel">
+          class="columns medium-3 control-label greyText editPropertiesLabel">
           {{'LABEL_TEXT' | translate}} :
         </label>
-        <div class="col-lg-9">
+        <div class="columns medium-9">
           <input
             type="text"
             class="form-control"
@@ -270,10 +269,10 @@ export const editGroupedSelectControlComponent = {
       <div class="form-group">
         <label
           for="inputTextDescriptionUpdate"
-          class="col-lg-3 control-label greyText editPropertiesLabel">
+          class="columns medium-3 control-label greyText editPropertiesLabel">
           {{'DESCRIPTION' | translate}} :
         </label>
-        <div class="col-lg-9">
+        <div class="columns medium-9">
           <input
             type="text"
             class="form-control"

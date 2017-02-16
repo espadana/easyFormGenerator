@@ -15,14 +15,14 @@ export const stepOneContentComponent = {
   <div
     class="animate-switch"
     ng-switch-when="first">
-    <div class="col-md-4">
+    <div class="columns medium-4">
       <step-one-command-panel
         configuration="$ctrl.configuration"
         increase-number-of-columns="$ctrl.increaseNumberOfColumns()"
         decrease-number-of-columns="$ctrl.decreaseNumberOfColumns()">
       </step-one-command-panel>
     </div>
-    <div class="col-md-8">
+    <div class="columns medium-8">
       <step-one-visual-panel
         configuration="$ctrl.configuration"
         set-active-line-number="$ctrl.setActiveLineNumberParent(index)">

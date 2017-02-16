@@ -2,10 +2,10 @@ export const EDIT_TEXTAREA_CONTROL_COMPONENT = 'editTextareaControl';
 
 export const editTextareaControlComponent = {
   template: `
-    <div class="panel panel-default">
-      <div class="panel-body">
+    <div class="card">
+      <div class="card-section">
         <div class="row">
-          <div class="col-md-12">
+          <div class="columns medium-12">
             <h5 class="greyText">
               <i class="fa fa-eye"></i>
               &nbsp;
@@ -15,11 +15,11 @@ export const editTextareaControlComponent = {
         </div>
         <hr/>
         <div class="row">
-          <div class="col-md-12">
+          <div class="columns medium-12">
             <div class="form-group">
               <label
                 for="textArea"
-                class="control-label textControlLabel">
+                class="textControlLabel">
                 {{$ctrl.nyaSelect.temporyConfig.formlyLabel}}
                 <span
                   ng-if="$ctrl.nyaSelect.temporyConfig.formlyRequired"
@@ -29,12 +29,11 @@ export const editTextareaControlComponent = {
               </label>
               <div class="">
                 <textarea
-                  class="form-control"
                   ng-model="model[options.key]"
                   rows="3"
                   id="textArea">
                 </textarea>
-                <p class="help-block">
+                <p class="help-text">
                   {{$ctrl.nyaSelect.temporyConfig.formlyDescription}}
                 </p>
               </div>
@@ -43,10 +42,10 @@ export const editTextareaControlComponent = {
         </div>
       </div>
     </div>
-    <div class="panel panel-default">
-      <div class="panel-body">
+    <div class="card">
+      <div class="card-section">
         <div class="row">
-          <div class="col-md-12">
+          <div class="columns medium-12">
             <h5 class="greyText">
               <i class="fa fa-pencil-square-o"></i>
               &nbsp;
@@ -59,13 +58,12 @@ export const editTextareaControlComponent = {
           <div class="form-group">
             <label
               for="inputTextLabelUpdate"
-              class="col-lg-3 control-label greyText editPropertiesLabel">
+              class="columns medium-12 greyText editPropertiesLabel">
               {{'LABEL_TEXT' | translate}} :
             </label>
-            <div class="col-lg-9">
+            <div class="columns medium-9">
               <input
                 type="text"
-                class="form-control"
                 ng-model="$ctrl.nyaSelect.temporyConfig.formlyLabel"
                 id="inputTextLabelUpdate"
                 placeholder="{{'ADD_EDIT_LABEL_HERE' | translate}}">
@@ -77,10 +75,10 @@ export const editTextareaControlComponent = {
             <div class="form-group">
               <label
                 for="inputTextRequiredUpdate"
-                class="col-lg-3 control-label greyText editPropertiesLabel">
+                class="columns medium-3 control-label greyText editPropertiesLabel">
                 {{'REQUIRED' | translate}} :
               </label>
-              <div class="col-lg-9">
+              <div class="columns medium-3">
                 <div class="checkboxCssCorrection">
                   &nbsp;
                 </div>
@@ -96,10 +94,10 @@ export const editTextareaControlComponent = {
             <div class="form-group">
               <label
                 for="inputTextDescriptionUpdate"
-                class="col-lg-3 control-label greyText editPropertiesLabel">
+                class="columns medium-3 control-label greyText editPropertiesLabel">
                 {{'DESCRIPTION' | translate}} :
               </label>
-              <div class="col-lg-9">
+              <div class="columns medium-9">
                 <input
                   type="text"
                   class="form-control"

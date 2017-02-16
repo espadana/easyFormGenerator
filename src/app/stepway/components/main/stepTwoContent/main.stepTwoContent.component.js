@@ -14,10 +14,10 @@ export const stepTwoContentComponent = {
   <div
     class="animate-switch"
     ng-switch-when="second">
-    <div class="col-md-4">
+    <div class="columns medium-4">
       <step-two-command-panel></step-two-command-panel>
     </div>
-    <div class="col-md-8">
+    <div class="columns medium-8">
       <step-two-visual-panel
         configuration="$ctrl.configuration"
         set-active-line-number="$ctrl.setActiveLineNumberParent(index)"

@@ -3,7 +3,7 @@ export const EDIT_CHOOSE_CONTROL_COMPONENT = 'editChooseControl';
 export const editChooseControlComponent = {
   template: `
   <ol
-    class="nya-bs-select col-xs-12 col-sm-12 col-md-12 col-lg-12"
+    class="nya-bs-select columns small-12"
     ng-model="$ctrl.modelNyaSelect"
     data-live-search="false">
     <li nya-bs-option="option in $ctrl.nyaSelectFiltered.controls group by option.group">

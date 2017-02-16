@@ -3,24 +3,24 @@ export const STEP_TWO_COMMAND_PANEL_COMPONENT_NAME = 'stepTwoCommandPanel';
 export const StepTwoCommandPanelComponent = {
   template: `
   <div id="commandPanel">
-    <div  class="panel panel-default">
-      <div class="panel-heading">
-        <h3 class="panel-title">
+    <div  class="card">
+      <div class="card-divider">
+        <h3>
           <i class="fa fa-keyboard-o"></i>
           &nbsp;
           {{'COMMAND_PANEL' | translate}}
         </h3>
       </div>
-      <div class="panel-body">
+      <div class="card-section">
         <div class="row">
-          <div class="col-md-12">
+          <div class="columns medium-12">
             <h4 class="numberOfcolumsText text-center">
               - {{'APPLY_CTRL2COL' | translate}} -
             </h4>
           </div>
         </div>
         <div class="row">
-          <div class="col-lg-12" >
+          <div class="columns large-12" >
             <hr/>
             <blockquote>
               <p class="numberOfcolumsText">

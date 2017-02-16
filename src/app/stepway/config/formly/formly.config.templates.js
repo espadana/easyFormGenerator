@@ -44,7 +44,7 @@ export const subTitleTemplate = {
 export const basicSelectTemplate = {
   template: `
     <ol
-      class="nya-bs-select col-sm-12 col-xs-12 col-md-12 col-lg12"
+      class="nya-bs-select columns small-12"
       ng-model="model[options.key || index]"
       id="{{id}}"
       disabled="options.templateOptions.options.length === 0">
@@ -62,7 +62,7 @@ export const basicSelectTemplate = {
 export const groupedSelectTemplate = {
   template: `
     <ol
-      class="nya-bs-select col-sm-12 col-xs-12 col-md-12 col-lg12"
+      class="nya-bs-select columns medium-12"
       ng-model="model[options.key || index]"
       data-live-search="true"
       disabled="options.templateOptions.options.length === 0">
@@ -84,10 +84,10 @@ export const groupedSelectTemplate = {
 export const datepickerTemplate = {
   template: `
     <p class="input-group">
-      <span class="input-group-btn">
+      <span class="input-group-button">
         <button
           type="button"
-          class="btn btn-default"
+          class="button"
           ng-click="datepicker.open($event)">
           <i class="glyphicon glyphicon-calendar"></i>
         </button>
@@ -97,7 +97,6 @@ export const datepickerTemplate = {
         id="{{::id}}"
         name="{{::id}}"
         ng-model="model[options.key]"
-        class="form-control"
         ng-click="datepicker.open($event)"
         uib-datepicker-popup="{{to.datepickerOptions.format}}"
         is-open="datepicker.opened"
@@ -110,7 +109,7 @@ export const datepickerTemplate = {
 export const validationTemplate = {
   template: `
     <div
-      class="formly-template-wrapper form-group"
+      class="formly-template-wrapper"
       ng-class="{\'has-error\': options.validation.errorExistsAndShouldBeVisible}">
       <formly-transclude></formly-transclude>
       <div

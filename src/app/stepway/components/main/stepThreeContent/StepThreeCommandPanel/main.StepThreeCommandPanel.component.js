@@ -3,76 +3,69 @@ export const STEP_THREE_COMMAND_PANEL_COMPONENT_NAME = 'stepThreeCommandPanel';
 export const StepThreeCommandPanelComponent = {
   template: `
   <div id="commandPanel" ng-if="!$ctrl.configuration.isWizard">
-    <div  class="panel panel-default">
-      <div class="panel-heading">
-        <h3 class="panel-title">
+    <div  class="card">
+      <div class="card-divider">
+        <h3>
           <i class="fa fa-keyboard-o"></i>
           &nbsp;
           {{'COMMAND_PANEL' | translate}}
         </h3>
       </div>
-      <div class="panel-body">
+      <div class="card-section">
         <div class="row">
-          <div class="col-xs-12">
+          <div class="column small-12">
             <div class="form-group">
               <label
                 for="inputSubmitButtontext"
-                class=" greyText control-label">
+                class="greyText control-label">
                 {{'CUSTOM_SUBMIT_BTN' | translate}} :
-              </label>
-              <div class="">
                 <input
                   type="text"
-                  class="form-control"
                   id="inputSubmitButtontext"
                   placeholder=""
                   ng-model="$ctrl.configuration.submitButtonText">
-              </div>
+              </label>
             </div>
           </div>
         </div>
         <hr/>
         <div class="row">
-          <div class="col-xs-12">
+          <div class="columns small-12">
             <div class="form-group">
               <label
                 for="inputCancelButtontext"
                 class=" greyText control-label">
                 {{'CUSTOM_CANCEL_BTN' | translate}} :
-              </label>
-              <div class="">
                 <input
                   type="text"
                   class="form-control"
                   id="inputCancelButtontext"
                   placeholder=""
                   ng-model="$ctrl.configuration.cancelButtonText">
-              </div>
+              </label>
             </div>
           </div>
         </div>
         <hr/>
         <div class="row">
-          <div class="col-xs-12">
+          <div class="columns small-12">
             <div class="form-group">
               <label
                 for="inputNameFormtext"
                 class=" greyText control-label">
                 {{'NAME_THIS_FORM' | translate}} :
-              </label>
-              <div class="">
                 <input
                   type="text"
                   class="form-control"
                   id="inputNameFormtext"
                   placeholder=""
                   ng-model="$ctrl.configuration.formName">
-              </div>
+              </label>
             </div>
           </div>
         </div>
         <button
-          class="btn btn-primary btn-block btn-lg"
+          class="button expanded large primary"
           ng-click="$ctrl.saveThisForm()">
           {{'SAVE_THIS_FORM' | translate}}
         </button>

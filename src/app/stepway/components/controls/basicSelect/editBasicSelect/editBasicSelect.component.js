@@ -3,57 +3,59 @@ export const EDIT_BASIC_SELECT_COMPONENT = 'editBasicSelectControl';
 
 export const editBasicSelectControlComponent = {
   template: `
-  <div class="callout">
-  <div class="row"> 
-    <div class="medium-12 columns">
-      <h5 class="greyText">
-        <i class="fa fa-eye"></i>
-        &nbsp;
-        {{'PREVIEW_TAB' | translate}} :
-      </h5>
-    </div>
-  </div>
-  <hr/>
-  <div class="row">
-    <div class="medium-12 columns">
-      <div class="">
-        <label
-          for="basicSelect"
-          class="textControlLabel">
-          {{$ctrl.nyaSelect.temporyConfig.formlyLabel}}
-          <span
-            ng-if="$ctrl.nyaSelect.temporyConfig.formlyRequired"
-            class="textControlLabel">
-            *
-          </span>
-        </label>
-        <div class="">
-          <ol
-            class="nya-bs-select small-12  medium-12 large-12 columns"
-            ng-model="$ctrl.modelbasicSelect"
-            id="basicSelect"
-            disabled="$ctrl.basicSelectRowCollection.rows.length === 0">
-            <li
-              class="nya-bs-option"
-              nya-bs-option="basicSelectRow in $ctrl.basicSelectRowCollection.rows"
-              value="$index">
-              <a>
-                {{basicSelectRow.option}}
-              </a>
-            </li>
-          </ol>
-          <p class="help-block">
-            {{$ctrl.nyaSelect.temporyConfig.formlyDescription}}
-          </p>
+  <div class="card">
+    <div class="card-section">
+      <div class="row">
+        <div class="columns medium-12">
+          <h5 class="greyText">
+            <i class="fa fa-eye"></i>
+            &nbsp;
+            {{'PREVIEW_TAB' | translate}} :
+          </h5>
+        </div>
+      </div>
+      <hr/>
+      <div class="row">
+        <div class="columns medium-12">
+          <div class="form-group">
+            <label
+              for="basicSelect"
+              class="control-label textControlLabel">
+              {{$ctrl.nyaSelect.temporyConfig.formlyLabel}}
+              <span
+                ng-if="$ctrl.nyaSelect.temporyConfig.formlyRequired"
+                class="textControlLabel">
+                *
+              </span>
+            </label>
+            <div class="">
+              <ol
+                class="nya-bs-select columns small-12"
+                ng-model="$ctrl.modelbasicSelect"
+                id="basicSelect"
+                disabled="$ctrl.basicSelectRowCollection.rows.length === 0">
+                <li
+                  class="nya-bs-option"
+                  nya-bs-option="basicSelectRow in $ctrl.basicSelectRowCollection.rows"
+                  value="$index">
+                  <a>
+                    {{basicSelectRow.option}}
+                  </a>
+                </li>
+              </ol>
+              <p class="help-text">
+                {{$ctrl.nyaSelect.temporyConfig.formlyDescription}}
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
-  </div>
-  <div class="callout">
-    <!--<div class="panel-body">-->
+  <div class="card">
+    <div class="card-section">
       <div class="row">
-        <div class="medium-12 columns">
+        <div class="columns medium-12">
           <h5 class="greyText">
             <i class="fa fa-pencil-square-o"></i>
             &nbsp;
@@ -63,7 +65,7 @@ export const editBasicSelectControlComponent = {
       </div>
       <hr/>
       <div class="row">
-        <div class="large-3 medium-3">
+        <div class="columns small-3">
           <label
             for="basicSelectRowCollection"
             class=" control-label greyText editPropertiesLabel">
@@ -73,8 +75,8 @@ export const editBasicSelectControlComponent = {
       </div>
       <div class="row">
         <div>
-          <div class="">
-            <div class="columns small-9 medium-9 large-9">
+          <div class="form-group">
+            <div class="columns small-9">
             <input
               type="text"
               class="button"
@@ -82,7 +84,7 @@ export const editBasicSelectControlComponent = {
               placeholder="{{'ADD_A_NEW_OPTION' | translate}}"
               ng-model="$ctrl.newOptionBasicSelect.saisie">
             </div>
-            <div class="small-3 medium-3 large-3 columns">
+            <div class="columns small-3">
               <button
                 class="button"
                 ng-click="$ctrl.addNewOptionBasicSelect()">
@@ -93,15 +95,15 @@ export const editBasicSelectControlComponent = {
         </div>
       </div>
       <div class="row">
-        <div class="large-3 columns">
-          <label class=" greyText editPropertiesLabel">
+        <div class="columns medium-3">
+          <label class=" control-label greyText editPropertiesLabel">
             {{'EDIT_REMOVE_OPTIONS' | translate}} :
           </label>
         </div>
       </div>
       <div class="row">
         <div class="form-group">
-          <div class-"large-12 medium-12 small-12">
+          <div class-"columns small-12">
             <div class="container">
               <div ng-if="$ctrl.basicSelectRowCollection.rows.length === 0">
                 <h5 class="text-center greyText">
@@ -112,7 +114,7 @@ export const editBasicSelectControlComponent = {
               </div>
               <table
                 ng-if="$ctrl.basicSelectRowCollection.rows.length > 0"
-                class="">
+                class="table-scroll stack hover">
                 <thead>
                   <tr>
                     <th st-ratio="20">
@@ -131,7 +133,6 @@ export const editBasicSelectControlComponent = {
                       <input
                         ng-model="$ctrl.basicSelectFilter"
                         placeholder="{{'SEARCH_4_OPTION' | translate}}"
-                        class="input-sm form-control"
                         type="search"
                       />
                     </th>
@@ -148,19 +149,19 @@ export const editBasicSelectControlComponent = {
                         {{basicSelectRow.option}}
                       </td>
                       <td st-ratio="25">
-                        <div class="pull-right">
+                        <div class="float-right">
                           <button
-                            class="button"
+                            class="button primary"
                             ng-click="$ctrl.upThisRow({index: $index})">
                             <i class="fa fa-arrow-up"></i>
                           </button>
                           <button
-                            class="button"
+                            class="button primary"
                             ng-click="$ctrl.downThisRow({index: $index})">
                             <i class="fa fa-arrow-down"></i>
                           </button>
                           <button
-                            class="button alert"
+                            class="button primary"
                             ng-click="$ctrl.removeRow({index: $index})">
                             <i class="fa fa-trash-o"></i>
                           </button>
@@ -178,13 +179,12 @@ export const editBasicSelectControlComponent = {
           <div class="">
             <label
               for="inputTextLabelUpdate"
-              class="large-3 columns  greyText editPropertiesLabel">
+              class="columns medium-3 greyText editPropertiesLabel">
               {{'LABEL_TEXT' | translate}} :
             </label>
-            <div class="large-9 columns">
+            <div class="columns medium-3">
               <input
                 type="text"
-                class=""
                 ng-model="$ctrl.nyaSelect.temporyConfig.formlyLabel"
                 id="inputTextLabelUpdate"
                 placeholder="{{'ADD_EDIT_LABEL_HERE' | translate}}">
@@ -196,10 +196,10 @@ export const editBasicSelectControlComponent = {
           <div class="">
             <label
               for="inputTextRequiredUpdate"
-              class="large-3 columns greyText editPropertiesLabel">
+              class="columns medium-3 control-label greyText editPropertiesLabel">
               Required :
             </label>
-            <div class="large-9 colums">
+            <div class="columns large-3">
               <div class="checkboxCssCorrection">
                 &nbsp;
               </div>
@@ -215,10 +215,10 @@ export const editBasicSelectControlComponent = {
           <div class="">
             <label
               for="inputTextDescriptionUpdate"
-              class="large-3 greyText editPropertiesLabel">
+              class="columns medium-3 control-label greyText editPropertiesLabel">
               {{'DESCRIPTION' | translate}} :
             </label>
-            <div class="large-9">
+            <div class="columns medium-9">
               <input
                 type="text"
                 class=""
@@ -255,3 +255,4 @@ const editBasicSelectModuleName = 'stepway.editBasicSelect.module';
 export default angular
                 .module(editBasicSelectModuleName, [])
                 .component(EDIT_BASIC_SELECT_COMPONENT, editBasicSelectControlComponent);
+

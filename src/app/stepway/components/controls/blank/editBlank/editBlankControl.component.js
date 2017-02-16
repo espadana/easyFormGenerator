@@ -3,10 +3,10 @@ export const EDIT_BLANK_CONTROL_COMPONENT = 'editBlankControl';
 export const editBlankControlComponent = {
   template: `
   <div ng-switch-when="empty">
-    <div class="callout">
-      <div class="panel-body">
+    <div class="card">
+      <div class="card-section">
         <div class="row">
-          <div class="col-md-12">
+          <div class="columns medium-12">
             <h5 class="greyText">
               <i class="fa fa-eye"></i>
               &nbsp;
@@ -16,7 +16,7 @@ export const editBlankControlComponent = {
         </div>
         <hr/>
         <div class="row">
-          <div class="col-sm-12">
+          <div class="columns small-3">
             <h5 class="text-center greyText">
               {{'COL_WILL_BE_BLANK' | translate}}
             </h5>

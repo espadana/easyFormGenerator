@@ -7,13 +7,7 @@
     common
 ===========================================================*/
 body {
-  padding: {
-    top:$body-padding-top;
-    bottom:$body-padding-bottom;
-  }
-
   height: $body-height;
-  background-color:$background-color-grey;
   font-family: $font-family-roboto;
 }
 
@@ -33,198 +27,6 @@ body {
     display: none !important;
   }
 
-/*=========================================================
-    bootstrap overrides
-===========================================================*/
-
-.nav .open>a, .nav .open>a:hover, .nav .open>a:focus {
-  background-color: #0d87e9;;
-  border-color: #2196f3;
-}
-/*correction bug sur theme bootstrap journal*/
-.modal-backdrop{
-  z-index: -1;
-}
-.navbar-right{
-  margin-right:20px;
-}
-
-textarea, textarea.form-control, input.form-control,
-input[type=text], input[type=password], input[type=email],
-input[type=number], [type=text].form-control, [type=password].form-control,
-[type=email].form-control, [type=tel].form-control, [contenteditable].form-control {
-font-size:$input-font-size;
-}
-select, select.form-control {
-  font-size:$input-font-size;
-}
-
-/*container to 100%*/
-@include media-bureau-min-width {
-  .container
-  {
-    width: $container-width;
-    margin-right:20px;
-  }
-}
-
-@include media-smartphone-min-width {
-  .container
-  {
-    width: $container-width;
-    margin-right:20px;
-  }
-}
-
-@include media-tablette-min-width {
-  .container
-  {
-    width: $container-width;
-
-  }
-}
-
-.container-fluid {
-  margin-right: auto;
-  margin-left: auto;
-}
-  .container-fluid padding {
-    left: 30px;
-    right: 30px;
-}
-.panel-default>.panel-heading {
-  color: $panel-defaut-panel-heading-text-color;
-  background-color: $panel-defaut-panel-heading-background-color;
-  border-color: $panel-defaut-panel-heading-border-color;
-}
-.navbar-nav>li>a {
-  line-height: 30px;
-}
-
-.navbar-default .navbar-brand {
-  line-height: initial;
-}
-
-.panel-heading{
-  background-color: none;
-  border-bottom: solid 1px $panel-defaut-panel-heading-border-color;//#CCC;
-}
-
-.navBtnGroup{
-  padding-top: 20px;
-  padding-bottom: 22px;
-  padding-right: 15px;
-  padding-left: 15px;
-  }
-
- .table>thead>tr>th,
- .table>tbody>tr>th,
- .table>tfoot>tr>th,
- .table>thead>tr>td,
- .table>tbody>tr>td,
- .table>tfoot>tr>td{
-  vertical-align: middle;
- }
-
-a {
-  &:hover {
-    color: #fff;
-  }
-
-  &:focus{
-    color:#fff;
-  }
-}
-
-/*Forms setup*/
-.form-control {
-    border-radius:0;
-    box-shadow:none;
-    height:auto;
-}
-.float-label{
-    font-size:10px;
-}
-.socialIcon{
-  &:hover{
-    color:$background-color-grey;
-  }
-  font-size: 32px;
-}
-
-input[type="text"].form-control,
-input[type="search"].form-control{
-    border:none;
-    border-bottom:1px dotted #CFCFCF;
-}
-textarea {
-    border:1px dotted #CFCFCF!important;
-    height:130px!important;
-}
-/*Content Container*/
-.content-container {
-    background-color:#fff;
-    padding:35px 20px;
-    margin-bottom:20px;
-}
-h1.content-title{
-    font-size:32px;
-    font-weight:300;
-    text-align:center;
-    margin-top:0;
-    margin-bottom:20px;
-    font-family: 'Open Sans', sans-serif!important;
-}
-
-/*paper them bootstrap*/
-.form-control {
-  font-family:$font-family-roboto;
-  display: block;
-  width: 100%;
-  height: 39px;
-  padding: 8px 12px;
-  font-size: $input-font-size;
-  line-height: 1.42857143;
-  color: #777777;
-  background-color: #ffffff;
-  background-image: none;
-  border: 1px solid #cccccc;
-  border-radius: 4px;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
-  -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-}
-.form-control:focus {
-  border-color: #66afe9;
-  outline: 0;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
-  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
-}
-.form-control::-moz-placeholder {
-  color: #999999;
-  opacity: 1;
-}
-.form-control:-ms-input-placeholder {
-  color: #999999;
-}
-.form-control::-webkit-input-placeholder {
-  color: #999999;
-}
-.form-control[disabled],
-.form-control[readonly],
-fieldset[disabled] .form-control {
-  background-color: #eeeeee;
-  opacity: 1;
-}
-.form-control[disabled],
-fieldset[disabled] .form-control {
-  cursor: not-allowed;
-}
-textarea.form-control {
-  height: auto;
-}
 /* animation ng-repeat in mailbox
 easy customize animation from here : http://www.nganimate.org/angularjs/ng-repeat/yo-yo-css3-keyframes-animation*/
 .animate-enter{
@@ -462,7 +264,7 @@ easy customize animation from here : http://www.nganimate.org/angularjs/ng-repea
     }//1px solid black;
   height:750px;//100%;
   overflow:scroll;
-   .well{
+   .callout{
       background-color:$jordy-color;
       margin:{
         bottom:0px;
@@ -678,4 +480,150 @@ easy customize animation from here : http://www.nganimate.org/angularjs/ng-repea
 .validation.ng-leave-active {
   opacity: 0;
   // top: -10px;
+}
+/*=========================================================
+  Pager List Styles
+=========================================================*/
+ul.pager {
+  list-style-type: none;
+  text-align: center;
+  li {
+    display: inline-block;
+  }
+};
+
+/*=========================================================
+  List Group Styles Implementation
+=========================================================*/
+
+.list-group {
+  margin-bottom: 20px;
+  padding-left: 0; // reset padding because ul and ol
+}
+
+.list-group-item {
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+  margin-bottom: -1px;
+  background-color: white;
+  border: 1px solid #ddd;
+}
+
+a.list-group-item,
+button.list-group-item {
+  color: #555;
+
+  .list-group-item-heading {
+    color: #333;
+  }
+
+  // Hover state
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    color: #555;
+    background-color: #f5f5f5;
+  }
+}
+
+button.list-group-item {
+  width: 100%;
+  text-align: left;
+}
+
+.list-group-item {
+  // Disabled state
+  &.disabled,
+  &.disabled:hover,
+  &.disabled:focus {
+    background-color: lighten(#000, 93.5%);
+    color: lighten(#000, 46.7%);
+    cursor: not-allowed;
+
+    // Force color to inherit for custom content
+    .list-group-item-heading {
+      color: inherit;
+    }
+    .list-group-item-text {
+      color: lighten(#000, 46.7%);
+    }
+  }
+
+  // Active class on item itself, not parent
+  &.active,
+  &.active:hover,
+  &.active:focus {
+    z-index: 2; // Place active items above their siblings for proper border styling
+    color: #fff;
+    background-color: #0d87e9;
+    border-color: #0d87e9;
+
+    // Force color to inherit for custom content
+    .list-group-item-heading,
+    .list-group-item-heading > small,
+    .list-group-item-heading > .small {
+      color: inherit;
+    }
+    .list-group-item-text {
+      color: lighten(#0d87e9, 40%);
+    }
+  }
+}
+
+
+@mixin list-group-item-variant($state, $background, $color) {
+  .list-group-item-#{$state} {
+    color: $color;
+    background-color: $background;
+
+    // [converter] extracted a&, button& to a.list-group-item-#{$state}, button.list-group-item-#{$state}
+  }
+
+  a.list-group-item-#{$state},
+  button.list-group-item-#{$state} {
+    color: $color;
+
+    .list-group-item-heading {
+      color: inherit;
+    }
+
+    &:hover,
+    &:focus {
+      color: $color;
+      background-color: darken($background, 5%);
+    }
+    &.active,
+    &.active:hover,
+    &.active:focus {
+      color: #fff;
+      background-color: $color;
+      border-color: $color;
+    }
+  }
+}
+
+
+// Contextual variants
+//
+// Add modifier classes to change text and background color on individual items.
+// Organizationally, this must come after the `:hover` states.
+
+@include list-group-item-variant(success, #3adb76, lighten(#3adb76, 40%));
+@include list-group-item-variant(secondary, #767676, lighten(#767676, 40%));
+@include list-group-item-variant(alert, #ffae00, lighten(#ffae00, 40%));
+@include list-group-item-variant(danger, #cc4b37, lighten(#cc4b37, 40%));
+
+
+// Custom content options
+//
+// Extra classes for creating well-formatted content within `.list-group-item`s.
+
+.list-group-item-heading {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+.list-group-item-text {
+  margin-bottom: 0;
+  line-height: 1.3;
 }

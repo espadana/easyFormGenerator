@@ -14,12 +14,12 @@ export const stepZeroContentComponent = {
   <div
     class="animate-switch"
     ng-switch-when="init">
-    <div class="col-md-4">
+    <div class="columns medium-4">
       <step-zero-command-panel
         add-newline="$ctrl.addNewline()">
       </step-zero-command-panel>
     </div>
-    <div class="col-md-8">
+    <div class="columns medium-8">
       <step-zero-visual-panel
         configuration="$ctrl.configuration"
         down-this-line="$ctrl.downThisLineParent(index)"

@@ -3,17 +3,17 @@
     {{'SELECT_A_CTRL' | translate}}
   </h3>
 </div>
-<div class="modal-body">
+<div class="reveal">
   <hr/>
   <div class="row">
-    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    <div class="columns small-12">
       <h5 class="greyText">
         <i class="fa fa-filter"></i>
         &nbsp;
         {{'SELECT_CTRL_IN_LIST' | translate}} :
       </h5>
     </div>
-    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    <div class="columns small-12 ">
       <edit-choose-control
         model-nya-select="editControlModCtrl.modelNyaSelect"
         nya-select-filtered="editControlModCtrl.nyaSelectFiltered"
@@ -26,7 +26,7 @@
 
     <div ng-switch-when="none">
       <div class="row">
-        <div class="col-sm-12">
+        <div class="columns small-12">
           <h5 class="text-center texteRouge">
             <i class="fa fa-arrow-up"></i>
             &nbsp; {{'SELECT_A_CTRL' | translate}}
