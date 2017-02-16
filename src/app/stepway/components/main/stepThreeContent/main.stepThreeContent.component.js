@@ -14,13 +14,13 @@ export const stepThreeContentComponent = {
   <div
     class="animate-switch"
     ng-switch-when="third">
-    <div class="col-md-4">
+    <div class="columns medium-4">
       <step-three-command-panel
         configuration="$ctrl.configuration"
         save-this-form="$ctrl.saveThisForm()">
       </step-three-command-panel>
     </div>
-    <div class="col-md-8">
+    <div class="columns medium-8">
       <step-three-visual-panel
         configuration="$ctrl.configuration"
         eda-data-model="$ctrl.edaDataModel"

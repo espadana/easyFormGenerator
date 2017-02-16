@@ -82,22 +82,22 @@ function edaStepWayEasyFormGenDirective(
                       active="vm.tab.previewTab.active"
                       ng-if="vm.tab.previewTab.tabVisible && !vm.configuration.isWizard"
                       heading="{{'PREVIEW_TAB' | translate}}">
-                      <div class="panel panel-default">
-                        <div class="panel-body">
+                      <div class="card">
+                        <div class="card-section">
                           <!-- formly here -->
                           <form ng-submit="vm.onSubmit()">
                             <formly-form
                               id="previewFormlyForm"
                               model="vm.dataModel"
                               fields="vm.wfFormFields">
-                              <span class="pull-right">
+                              <span class="float-right">
                                 <button
-                                  class="btn btn-primary"
+                                  class="button primary"
                                   type="submit">
                                   {{vm.configuration.submitButtonText}}
                                 </button>
                                 <button
-                                  class="btn btn-primary"
+                                  class="button primary"
                                   type="cancel">
                                   {{vm.configuration.cancelButtonText}}
                                 </button>
@@ -108,8 +108,8 @@ function edaStepWayEasyFormGenDirective(
                       </div>
                       <div
                         ng-if="vm.tab.previewTab.modelsVisible"
-                        class="panel panel-default">
-                        <div class="panel-body">
+                        class="card">
+                        <div class="card-section">
                           <p>{{'DATA_MODEL' | translate}}</p>
                           <pre>
                             {{vm.dataModel | json}}
@@ -118,8 +118,8 @@ function edaStepWayEasyFormGenDirective(
                       </div>
                       <div
                         ng-if="vm.tab.previewTab.modelsVisible"
-                        class="panel panel-default">
-                        <div class="panel-body">
+                        class="card">
+                        <div class="card-section">
                           <p>{{'FIELDS_MODEL' | translate}}</p>
                           <pre>
                             {{vm.wfFormFieldsOnlyNeededProperties | json}}

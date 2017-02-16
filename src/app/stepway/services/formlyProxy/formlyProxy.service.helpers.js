@@ -187,7 +187,7 @@ const addDatepickerOptionsProperty = (fieldToPush, configurationModel, lineIndex
 const addOneColumnControl = (formlyModel, configurationModel,lineIndex) => {
   const control = { ...configurationModel.lines[lineIndex].columns[0].control };
   const fieldToPush = {
-    className: 'col-xs-12',
+    className: 'columns small-12',
     type: control && control.type && control.type !== 'none' ? control.type : 'blank',
     key: control && control.key ? control.key : 'blank' + Date.now(),
     templateOptions: {
@@ -216,7 +216,7 @@ const addTwoColumnControl = (formlyModel, configurationModel,lineIndex) => {
   const control0 = { ...configurationModel.lines[lineIndex].columns[0].control };
   //text header is stored in "description" in templateOtion model
   const headerTemplateCol0 =  {
-    className: 'col-xs-6',
+    className: 'columns small-6',
     template: `
     <div class="row">
       <div class="">
@@ -229,7 +229,7 @@ const addTwoColumnControl = (formlyModel, configurationModel,lineIndex) => {
   `
   };
   const controlCol0 = {
-    className: 'col-xs-6',
+    className: 'columns small-6',
     type: control0 && control0.type && control0.type !== 'none' ? control0.type:  'blank',
     key: control0 && control0.key ? control0.key: 'blank' + Date.now(),
     templateOptions: {
@@ -254,7 +254,7 @@ const addTwoColumnControl = (formlyModel, configurationModel,lineIndex) => {
 
   const control1 = { ...configurationModel.lines[lineIndex].columns[1].control };
   const headerTemplateCol1 =  {
-    className: 'col-xs-6',
+    className: 'columns small-6',
     template:`
     <div class="row">
       <div class="">
@@ -267,7 +267,7 @@ const addTwoColumnControl = (formlyModel, configurationModel,lineIndex) => {
   `
   };
   const controlCol1 =  {
-    className: 'col-xs-6',
+    className: 'columns small-6',
     type: control1 && control1.type && control1.type !== 'none' ? control1.type : 'none',
     key: control1 && control1.key ? control1.key : 'blank' + Date.now(),
     templateOptions: {
@@ -315,7 +315,7 @@ const addThreeColumnControl = (formlyModel, configurationModel,lineIndex) => {
   const control0 = { ...configurationModel.lines[lineIndex].columns[0].control };
   //text header is stored in "description" in templateOtion model
   const headerTemplateCol0 =  {
-    className: 'col-xs-4',
+    className: 'columns small-4',
     template : `
     <div class="row">
       <div class="">
@@ -328,7 +328,7 @@ const addThreeColumnControl = (formlyModel, configurationModel,lineIndex) => {
     `
   };
   const controlCol0 =  {
-    className: 'col-xs-4',
+    className: 'columns small-4',
     type: control0 && control0.type && control0.type !== 'none' ? control0.type:  'blank',
     key: control0 && control0.key ? control0.key: 'blank' + Date.now(),
     templateOptions: {
@@ -353,7 +353,7 @@ const addThreeColumnControl = (formlyModel, configurationModel,lineIndex) => {
 
   const control1 = { ...configurationModel.lines[lineIndex].columns[1].control };
   const headerTemplateCol1 =  {
-    className: 'col-xs-4',
+    className: 'columns small-4',
     template:`
     <div class="row">
       <div class="">
@@ -366,7 +366,7 @@ const addThreeColumnControl = (formlyModel, configurationModel,lineIndex) => {
     `
   };
   const controlCol1 = {
-    className: 'col-xs-4',
+    className: 'columns small-4',
     type: control1 && control1.type && control1.type !== 'none' ? control1.type:  'blank',
     key: control1 && control1.key ? control1.key: 'blank' + Date.now(),
     templateOptions: {
@@ -391,7 +391,7 @@ const addThreeColumnControl = (formlyModel, configurationModel,lineIndex) => {
 
   const control2 = { ...configurationModel.lines[lineIndex].columns[2].control };
   const headerTemplateCol2 =  {
-    className: 'col-xs-4',
+    className: 'columns small-4',
     template:`
     <div class="row">
       <div class="">
@@ -404,7 +404,7 @@ const addThreeColumnControl = (formlyModel, configurationModel,lineIndex) => {
     `
   };
   const controlCol2 = {
-    className: 'col-xs-4',
+    className: 'columns small-4',
     type: control2 && control2.type && control2.type !== 'none' ? control2.type:  'blank',
     key: control2 && control2.key ? control2.key: 'blank' + Date.now(),
     templateOptions: {

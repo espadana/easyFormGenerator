@@ -2,10 +2,10 @@ export const EDIT_HEADER_CONTROL_COMPONENT = 'editHeaderControl';
 
 export const editHeaderControlComponent = {
   template: `
-  <div class="panel panel-default">
-    <div class="panel-body">
+  <div class="card">
+    <div class="card-section">
       <div class="row">
-        <div class="col-md-12">
+        <div class="columns medium-12">
           <h5 class="greyText"><i class="fa fa-eye"></i>
             &nbsp;
             {{'PREVIEW_TAB' | translate}} :
@@ -14,7 +14,7 @@ export const editHeaderControlComponent = {
       </div>
       <hr/>
       <div class="row">
-        <div class="col-md-12">
+        <div class="columns medium-12">
           <div class="form-group">
             <div class="">
               <h2 class="text-center">
@@ -27,10 +27,10 @@ export const editHeaderControlComponent = {
       </div>
     </div>
   </div>
-  <div class="panel panel-default">
-    <div class="panel-body">
+  <div class="card">
+    <div class="card-section">
       <div class="row">
-        <div class="col-md-12">
+        <div class="columns medium-12">
           <h5 class="greyText">
             <i class="fa fa-pencil-square-o"></i>
             &nbsp;
@@ -44,10 +44,10 @@ export const editHeaderControlComponent = {
         <div class="form-group">
           <label
             for="inputHeaderTextUpdate"
-            class="col-lg-3 control-label greyText editPropertiesLabel">
+            class="columns medium-3 control-label greyText editPropertiesLabel">
             {{'HEADER_TEXT' | translate}} :
           </label>
-          <div class="col-lg-9">
+          <div class="columns medium-9">
             <input
               type="text"
               class="form-control"
@@ -62,10 +62,10 @@ export const editHeaderControlComponent = {
         <div class="form-group">
           <label
             for="inputTextDescriptionUpdate"
-            class="col-lg-3 control-label greyText editPropertiesLabel">
+            class="columns medium-3 control-label greyText editPropertiesLabel">
             {{'DESCRIPTION' | translate}} :
           </label>
-          <div class="col-lg-9">
+          <div class="columns medium-3">
             <input
               type="text"
               class="form-control"

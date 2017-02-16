@@ -2,10 +2,10 @@ export const EDIT_RADIO_CONTROL_COMPONENT = 'editRadioControl';
 
 export const editRadioControlComponent = {
   template: `
-  <div class="panel panel-default">
-    <div class="panel-body">
+  <div class="card">
+    <div class="card-section">
       <div class="row">
-        <div class="col-md-12">
+        <div class="columns medium-12">
           <h5 class="greyText">
             <i class="fa fa-eye"></i>
             &nbsp;
@@ -15,7 +15,7 @@ export const editRadioControlComponent = {
       </div>
       <hr/>
       <div class="row">
-        <div class="col-md-12">
+        <div class="columns medium-12">
           <div class="form-group">
             <label
               for="basicSelect"
@@ -41,7 +41,7 @@ export const editRadioControlComponent = {
                     {{radioRow.option}}
                 </label>
               </div>
-              <p class="help-block">
+              <p class="help-text">
                 {{$ctrl.nyaSelect.temporyConfig.formlyDescription}}
               </p>
             </div>
@@ -50,10 +50,10 @@ export const editRadioControlComponent = {
       </div>
     </div>
   </div>
-  <div class="panel panel-default">
-    <div class="panel-body">
+  <div class="card">
+    <div class="card-section">
       <div class="row">
-        <div class="col-md-12">
+        <div class="columns medium-12">
           <h5
             class="greyText">
             <i class="fa fa-pencil-square-o"></i>
@@ -64,7 +64,7 @@ export const editRadioControlComponent = {
       </div>
       <hr/>
       <div class="row">
-        <div class="col-lg-3 col-md-3">
+        <div class="columns medium-3">
           <label
             for="radioRowCollection"
             class=" control-label greyText editPropertiesLabel">
@@ -75,17 +75,16 @@ export const editRadioControlComponent = {
       <div class="row">
         <div>
           <div class="form-group">
-            <div class="col-sm-9 col-xs-9 col-md-9 col-lg-9">
+            <div class="columns medium-9">
               <input
                 type="text"
-                class="form-control"
                 id="inputAddNewRadioOption"
                 placeholder="{{'ADD_RADIO_PLACEHOLD' | translate}}"
                 ng-model="$ctrl.newOptionRadio.saisie">
             </div>
-            <div class="col-sm-3 col-xs-3 col-md-3 col-lg-3">
+            <div class="columns medium-3">
               <button
-                class="btn btn-primary"
+                class="button primary"
                 ng-click="$ctrl.addNewOptionRadio()">
                 {{'ADD' | translate}}
               </button>
@@ -94,17 +93,17 @@ export const editRadioControlComponent = {
         </div>
       </div>
       <div class="row">
-        <div class="col-lg-3 col-md-3">
+        <div class="columns medium-3">
           <label
             for="radioRowCollection"
-            class=" control-label greyText editPropertiesLabel">
+            class="greyText editPropertiesLabel">
             {{'EDIT_REMOVE_RADIO' | translate}} :
           </label>
         </div>
       </div>
         <div class="row">
           <div class="form-group">
-            <div class-"col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class-"columns medium-12">
               <div class="container">
                 <div ng-show="$ctrl.radioRowCollection.rows.length === 0">
                   <h5 class="text-center greyText">
@@ -115,7 +114,7 @@ export const editRadioControlComponent = {
                 </div>
                 <table
                   ng-if="$ctrl.radioRowCollection.rows.length > 0"
-                  class="table table-striped">
+                  class="hover table-scroll">
                   <thead>
                   <tr>
                     <th st-ratio="20">
@@ -134,7 +133,6 @@ export const editRadioControlComponent = {
                       <input
                         ng-model="$ctrl.radioFilter"
                         placeholder="{{'SEARCH_4_OPTION' | translate}}"
-                        class="input-sm form-control"
                         type="search"
                       />
                     </th>
@@ -151,19 +149,19 @@ export const editRadioControlComponent = {
                         {{radioRow.option}}
                       </td>
                       <td st-ratio="25">
-                        <div class="pull-right">
+                        <div class="float-right">
                           <button
-                            class="btn btn-primary"
+                            class="button primary"
                             ng-click="$ctrl.upThisRadioRow({index: $index})">
                             <i class="fa fa-arrow-up"></i>
                           </button>
                           <button
-                            class="btn btn-primary"
+                            class="button primary"
                             ng-click="$ctrl.downThisRadioRow({index: $index})">
                             <i class="fa fa-arrow-down"></i>
                           </button>
                           <button
-                            class="btn btn-danger"
+                            class="button alert"
                             ng-click="$ctrl.removeRadioRow({index: $index})">
                             <i class="fa fa-trash-o"></i>
                           </button>
@@ -182,9 +180,9 @@ export const editRadioControlComponent = {
           <div class="form-group">
             <label
               for="inputTextLabelUpdate"
-              class="col-lg-3 control-label greyText editPropertiesLabel">{{'LABEL_TEXT' | translate}} :
+              class="columns medium-3 control-label greyText editPropertiesLabel">{{'LABEL_TEXT' | translate}} :
             </label>
-            <div class="col-lg-9">
+            <div class="columns medium-9">
               <input
                 type="text"
                 class="form-control"
@@ -199,9 +197,9 @@ export const editRadioControlComponent = {
           <div class="form-group">
             <label
               for="inputTextRequiredUpdate"
-              class="col-lg-3 control-label greyText editPropertiesLabel">{{'REQUIRED' | translate}} :
+              class="columns medium-3 control-label greyText editPropertiesLabel">{{'REQUIRED' | translate}} :
             </label>
-            <div class="col-lg-9">
+            <div class="columns medium-9">
               <div class="checkboxCssCorrection">
                 &nbsp;
               </div>
@@ -217,12 +215,11 @@ export const editRadioControlComponent = {
           <div class="form-group">
             <label
               for="inputTextDescriptionUpdate"
-              class="col-lg-3 control-label greyText editPropertiesLabel">{{'DESCRIPTION' | translate}} :
+              class="columns medium-3 control-label greyText editPropertiesLabel">{{'DESCRIPTION' | translate}} :
             </label>
-            <div class="col-lg-9">
+            <div class="columns medium-9">
               <input
                 type="text"
-                class="form-control"
                 ng-model="$ctrl.nyaSelect.temporyConfig.formlyDescription"
                 id="inputTextDescriptionUpdate"
                 placeholder="{{'ADDEDIT_DESCRIPTION' | translate}}">

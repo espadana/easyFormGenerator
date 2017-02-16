@@ -2,10 +2,10 @@ export const EDIT_DATE_COMPONENT = 'editDateControl';
 
 export const editDateControlComponent = {
   template: `
-    <div class="panel panel-default">
-      <div class="panel-body">
+    <div class="card">
+      <div class="card-section">
         <div class="row">
-          <div class="col-md-12">
+          <div class="columns medium-12">
             <h5 class="greyText">
               <i class="fa fa-eye"></i>
               &nbsp;
@@ -15,7 +15,7 @@ export const editDateControlComponent = {
         </div>
         <hr/>
         <div class="row">
-          <div class="col-md-12">
+          <div class="columns medium-12">
             <div class="form-group">
               <label
                 for="inputDate"
@@ -29,12 +29,12 @@ export const editDateControlComponent = {
               </label>
               <div class="">
                 <div class="input-group" >
-                  <span class="input-group-addon">
+                  <span class="input-group-label">
                     <i class="glyphicon glyphicon-calendar"></i>
                   </span>
                   <input
                     type="text"
-                    class="form-control"
+                    class="input-group-field"
                     uib-datepicker-popup="{{$ctrl.nyaSelect.temporyConfig.datepickerOptions.format}}"
                     ng-model="$ctrl.demodt.dt"
                     is-open="$ctrl.demodt.opened"
@@ -43,7 +43,7 @@ export const editDateControlComponent = {
                     ng-click="$ctrl.open({event : $event})"
                   />
                 </div>
-                <p class="help-block">
+                <p class="help-text">
                   {{$ctrl.nyaSelect.temporyConfig.formlyDescription}}
                 </p>
               </div>
@@ -53,10 +53,10 @@ export const editDateControlComponent = {
       </div>
     </div>
 
-    <div class="panel panel-default">
-      <div class="panel-body">
+    <div class="card">
+      <div class="card-section">
         <div class="row">
-          <div class="col-md-12">
+          <div class="columns medium-12">
             <h5 class="greyText">
               <i class="fa fa-pencil-square-o"></i>
               &nbsp;
@@ -67,12 +67,12 @@ export const editDateControlComponent = {
         <hr/>
         <div class="row">
           <div class="form-group">
-          <label class="col-lg-3 control-label greyText editPropertiesLabel">
+          <label class="columns medium-3 control-label greyText editPropertiesLabel">
             {{'DATE_FORMAT' | translate}} :
           </label>
-          <div class="col-lg-9">
+          <div class="columns medium-9">
             <ol
-              class="nya-bs-select col-sm-12 col-xs-12 col-md-12 col-lg12"
+              class="nya-bs-select columns small-12"
               ng-model="$ctrl.nyaSelect.temporyConfig.datepickerOptions.format"
               id="dateformatSelect">
               <li
@@ -92,10 +92,10 @@ export const editDateControlComponent = {
         <div class="form-group">
           <label
             for="inputTextLabelUpdate"
-            class="col-lg-3 control-label greyText editPropertiesLabel">
+            class="columns medium-3 control-label greyText editPropertiesLabel">
             {{'LABEL_TEXT' | translate}} :
           </label>
-          <div class="col-lg-9">
+          <div class="columns medium-9">
             <input
               type="text"
               class="form-control"
@@ -110,10 +110,10 @@ export const editDateControlComponent = {
           <div class="form-group">
             <label
               for="inputTextRequiredUpdate"
-              class="col-lg-3 control-label greyText editPropertiesLabel">
+              class="columns medium-3 control-label greyText editPropertiesLabel">
               {{'REQUIRED' | translate}} :
             </label>
-            <div class="col-lg-9">
+            <div class="columns medium-9">
               <div class="checkboxCssCorrection">
                 &nbsp;
               </div>
@@ -129,10 +129,10 @@ export const editDateControlComponent = {
           <div class="form-group">
             <label
               for="inputTextDescriptionUpdate"
-              class="col-lg-3 control-label greyText editPropertiesLabel">
+              class="columns medium-3 control-label greyText editPropertiesLabel">
               {{'DESCRIPTION' | translate}} :
             </label>
-            <div class="col-lg-9">
+            <div class="columns medium-9">
               <input
                 type="text"
                 class="form-control"

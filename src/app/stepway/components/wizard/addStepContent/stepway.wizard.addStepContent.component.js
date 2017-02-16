@@ -3,14 +3,14 @@ const ADD_STEP_CONTENT_COMPONENT = 'addStepContent';
 export const addStepContentComponent = {
   template: `
   <div>
-    <div class="col-md-4">
+    <div class="columns medium-4">
       <add-step-command-panel
         configuration="$ctrl.configuration"
         add-newstep="$ctrl.addNewstep()"
         save-this-form="$ctrl.saveThisFormParent(event)">
       </add-step-command-panel>
     </div>
-    <div class="col-md-8">
+    <div class="columns medium-8">
       <add-step-visual-panel
         configuration="$ctrl.configuration"
         set-active-step-number="$ctrl.setActiveStepNumberParent(index)"

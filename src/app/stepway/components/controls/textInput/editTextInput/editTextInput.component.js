@@ -2,10 +2,10 @@ export const EDIT_TEXTINPUT_CONTROL_COMPONENT = 'editTextInputControl';
 
 export const editTextInputControlComponent = {
   template: `
-    <div class="panel panel-default">
-      <div class="panel-body">
+    <div class="card">
+      <div class="card-section">
         <div class="row">
-          <div class="col-md-12">
+          <div class="columns medium-12">
             <h5 class="greyText">
               <i class="fa fa-eye"></i>
               &nbsp;
@@ -15,11 +15,11 @@ export const editTextInputControlComponent = {
         </div>
         <hr/>
         <div class="row">
-          <div class="col-md-12">
+          <div class="columns medium-12">
             <div class="form-group">
               <label
                 for="inputText"
-                class="control-label textControlLabel">
+                class="textControlLabel">
                 {{$ctrl.nyaSelect.temporyConfig.formlyLabel}}
                 <span
                   ng-if="$ctrl.nyaSelect.temporyConfig.formlyRequired"
@@ -33,7 +33,7 @@ export const editTextInputControlComponent = {
                   class="form-control"
                   id="inputText"
                   placeholder="{{$ctrl.nyaSelect.temporyConfig.formlyPlaceholder}}">
-                  <p class="help-block">
+                  <p class="help-text">
                   {{$ctrl.nyaSelect.temporyConfig.formlyDescription}}
                   </p>
               </div>
@@ -42,10 +42,10 @@ export const editTextInputControlComponent = {
         </div>
       </div>
     </div>
-    <div class="panel panel-default">
-      <div class="panel-body">
+    <div class="card">
+      <div class="card-section">
         <div class="row">
-          <div class="col-md-12">
+          <div class="columns medium-12">
             <h5 class="greyText">
               <i class="fa fa-pencil-square-o"></i>
               &nbsp;
@@ -58,10 +58,10 @@ export const editTextInputControlComponent = {
           <div class="form-group">
             <label
               for="inputTextLabelUpdate"
-              class="col-lg-3 control-label greyText editPropertiesLabel">
+              class="columns medium-3 greyText editPropertiesLabel">
               {{'LABEL_TEXT' | translate}} :
             </label>
-            <div class="col-lg-9">
+            <div class="columns medium-9">
               <input
                 type="text"
                 class="form-control"
@@ -76,10 +76,10 @@ export const editTextInputControlComponent = {
           <div class="form-group">
             <label
               for="inputTextplaceholderUpdate"
-              class="col-lg-3 control-label greyText editPropertiesLabel">
+              class="columns medium-3 control-label greyText editPropertiesLabel">
               {{'PLACEHOLDER' | translate}} :
             </label>
-            <div class="col-lg-9">
+            <div class="columns medium-9">
               <input
                 type="text"
                 class="form-control"
@@ -94,10 +94,10 @@ export const editTextInputControlComponent = {
           <div class="form-group">
             <label
               for="inputTextRequiredUpdate"
-              class="col-lg-3 control-label greyText editPropertiesLabel">
+              class="columns medium-3 control-label greyText editPropertiesLabel">
               {{'REQUIRED' | translate}} :
             </label>
-            <div class="col-lg-9">
+            <div class="columns medium-9">
               <div class="checkboxCssCorrection">&nbsp;</div>
               <input
                 type="checkbox"
@@ -111,10 +111,10 @@ export const editTextInputControlComponent = {
           <div class="form-group">
             <label
               for="inputTextDescriptionUpdate"
-              class="col-lg-3 control-label greyText editPropertiesLabel">
+              class="columns medium-3 greyText editPropertiesLabel">
               {{'DESCRIPTION' | translate}} :
             </label>
-            <div class="col-lg-9">
+            <div class="columns medium-9">
               <input
                 type="text"
                 class="form-control"
@@ -129,13 +129,12 @@ export const editTextInputControlComponent = {
           <div class="form-group">
             <label
               for="inputTextDefaultValueUpdate"
-              class="col-lg-3 control-label greyText editPropertiesLabel">
+              class="columns medium-3 greyText editPropertiesLabel">
               {{'DEFAULTVALUE' | translate}} :
             </label>
-            <div class="col-lg-9">
+            <div class="columns medium-9">
               <input
                 type="text"
-                class="form-control"
                 ng-model="$ctrl.nyaSelect.temporyConfig.formlyDefaultValue"
                 id="inputTextDefaultValueUpdate"
                 placeholder="{{'ADD_EDIT_DEFAULTVALUE_PLACEHOLD' | translate}}">

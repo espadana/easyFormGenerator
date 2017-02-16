@@ -25,30 +25,30 @@
                 </div>
               </tab>
               <tab active="vm.tab.previewTab.active" ng-if="vm.tab.previewTab.tabVisible" heading="{{'PREVIEW_TAB' | translate}}">
-                <div class="panel panel-default">
-                  <div class="panel-body">
+                <div class="card">
+                  <div class="card-section">
                     <!-- formly here -->
                     
                       <wizard edit-mode="true" indicators-position="top" on-finish="finishedWizard()">
                         <wz-step wz-title="{{vm.configuration.steps[$index].title}}" ng-repeat="step in vm.configuration.steps track by $index">
                           <formly-form model="vm.dataModel" fields="vm.configuration.steps[$index].easyFormGeneratorModel.formlyFieldsModel">
-                            <span class="pull-right">
-                            <button class="btn btn-primary" ng-if="$index > 0" wz-previous>
+                            <span class="float-right">
+                            <button class="button primary" ng-if="$index > 0" wz-previous>
                                 <i class="fa fa-arrow-left fa-2x pull-left"></i>
-                                <span class="pull-right ng-binding">
+                                <span class="float-right ng-binding">
                                   Previous
                                 </span>
                             </button>
-                            <button class="btn btn-primary" ng-if="$index < vm.configuration.steps.length - 1" wz-next>
-                                <i class="fa fa-arrow-right fa-2x pull-left"></i>
-                                <span class="pull-right ng-binding">
+                            <button class="button primary" ng-if="$index < vm.configuration.steps.length - 1" wz-next>
+                                <i class="fa fa-arrow-right fa-2x float-left"></i>
+                                <span class="float-right ng-binding">
                                   Next
                                 </span>
                               </button>
-                              <button class="btn btn-primary" ng-if="$index == vm.configuration.steps.length - 1" 
+                              <button class="button primary" ng-if="$index == vm.configuration.steps.length - 1" 
                               type="Submit">            
-                              <i class="fa fa-save fa-2x pull-left"></i>                    
-                                <span class="pull-right ng-binding">
+                              <i class="fa fa-save fa-2x float-left"></i>                    
+                                <span class="float-right ng-binding">
                                   Submit
                                 </span>
                               </button>
@@ -59,16 +59,16 @@
                     
                   </div>
                 </div>
-                <div ng-if="vm.tab.previewTab.modelsVisible" class="panel panel-default">
-                  <div class="panel-body">
+                <div ng-if="vm.tab.previewTab.modelsVisible" class="card">
+                  <div class="card-section">
                     <p>{{'DATA_MODEL' | translate}}</p>
                     <pre>
                       {{vm.dataModel | json}}
                     </pre>
                   </div>
                 </div>
-                <div ng-if="vm.tab.previewTab.modelsVisible" class="panel panel-default">
-                  <div class="panel-body">
+                <div ng-if="vm.tab.previewTab.modelsVisible" class="card">
+                  <div class="card-section">
                     <p>{{'FIELDS_MODEL' | translate}}</p>
                     <pre>
                       {{vm | json}}                      

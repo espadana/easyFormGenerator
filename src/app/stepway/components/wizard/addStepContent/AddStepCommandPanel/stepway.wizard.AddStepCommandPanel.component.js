@@ -3,30 +3,30 @@ export const ADD_STEP_COMMAND_PANEL_COMPONENT_NAME = 'addStepCommandPanel';
 export const AddStepCommandPanelComponent = {
   template: `
   <div id="commandPanel">
-    <div  class="panel panel-default">
-      <div class="panel-heading">
-        <h3 class="panel-title">
+    <div  class="card">
+      <div class="card-divider">
+        <h3 >
           <i class="fa fa-keyboard-o"></i>
           &nbsp;
           {{'COMMAND_PANEL' | translate}}
         </h3>
       </div>
-      <div class="panel-body">
+      <div class="card-section">
         <div class="row">
-          <div class="col-md-12">
+          <div class="columns small-12">
             <span class="addNewLine">
               {{'ADD_NEW_STEP' | translate}} :
             </span>
             &nbsp;
             <button
-              class="btn btn-primary"
+              class="button primary"
               ng-click="$ctrl.addNewstep()">
               <i class="fa fa-plus fa-1x"></i>
             </button>
           </div>          
         </div>
         <button
-          class="btn btn-primary btn-block btn-lg"
+          class="button primary expanded large"
           ng-click="$ctrl.saveThisForm({event: $event})">
           {{'SAVE_THIS_FORM' | translate}}
         </button>
