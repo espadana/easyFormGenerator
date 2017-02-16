@@ -7,6 +7,7 @@ const ACTIVE_MODAL_ANIMATION  = true;
 function easyFromConfig(easyFormSteWayConfigProvider){
   //enable/disable easy form modal animation
   easyFormSteWayConfigProvider.setModalAnimation(ACTIVE_MODAL_ANIMATION);
+  easyFormSteWayConfigProvider.setLanguage('fa');
 }
 
 easyFromConfig.$inject = ['easyFormSteWayConfigProvider'];
