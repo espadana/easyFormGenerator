@@ -42,7 +42,7 @@
 </head>
 <!-- NOTE : ng-cloak here is not optimal solution : better to use it only where it is needed (I just take a shortcut as this an example not a production sample)  -->
 
-<body ng-controller="demoController as demoCtrl" ng-cloak>
+<body ng-controller="demoController as demoCtrl" ng-cloak style="direction: rtl">
   <div>
     <!-- Easy Form Generator (here step way) is now a ridiculous small html :
       =============================================================-->
@@ -65,7 +65,6 @@
        * config
        */
       configFct.$inject = ['easyFormSteWayConfigProvider'];
->>>>>>> bf2aa7ad21eedae3a08fe6930936da908242fde7
 
       function configFct(easyFormSteWayConfigProvider) {
         //enable/disable modal animation
@@ -92,8 +91,8 @@
         //demo purpose only :
         //in 3 seconds a new form will be bound to easy form generator :
         timedModelChanged();
-        console.info('Current language is ' + demoCtrl.currentLangue);
-
+        console.info('Current language is ' + demoCtrl.currentLangue);debugger;
+        switchLanguage('fa');
         function switchLanguage(toLanguage) {
           if (angular.isString) {
             easyFormSteWayConfig.setLanguage(toLanguage);
