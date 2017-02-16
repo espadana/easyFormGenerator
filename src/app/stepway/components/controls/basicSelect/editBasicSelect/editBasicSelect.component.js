@@ -17,7 +17,7 @@ export const editBasicSelectControlComponent = {
       <hr/>
       <div class="row">
         <div class="columns medium-12">
-          <div class="form-group">
+          <div >
             <label
               for="basicSelect"
               class=" textControlLabel">
@@ -75,7 +75,7 @@ export const editBasicSelectControlComponent = {
       </div>
       <div class="row">
         <div>
-          <div class="form-group">
+          <div >
             <div class="columns small-9">
             <input
               type="text"
@@ -102,7 +102,7 @@ export const editBasicSelectControlComponent = {
         </div>
       </div>
       <div class="row">
-        <div class="form-group">
+        <div >
           <div class-"columns small-12">
             <div class="container">
               <div ng-if="$ctrl.basicSelectRowCollection.rows.length === 0">

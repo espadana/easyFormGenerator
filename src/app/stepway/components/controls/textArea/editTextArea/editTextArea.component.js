@@ -16,7 +16,7 @@ export const editTextareaControlComponent = {
         <hr/>
         <div class="row">
           <div class="columns medium-12">
-            <div class="form-group">
+            <div >
               <label
                 for="textArea"
                 class="textControlLabel">
@@ -55,7 +55,7 @@ export const editTextareaControlComponent = {
         </div>
         <hr/>
         <div class="row">
-          <div class="form-group">
+          <div >
             <label
               for="inputTextLabelUpdate"
               class="columns medium-12 greyText editPropertiesLabel">
@@ -72,7 +72,7 @@ export const editTextareaControlComponent = {
         </div>
         <div class="marginTopFivepixels"></div>
           <div class="row">
-            <div class="form-group">
+            <div >
               <label
                 for="inputTextRequiredUpdate"
                 class="columns medium-3  greyText editPropertiesLabel">
@@ -91,7 +91,7 @@ export const editTextareaControlComponent = {
           </div>
           <div class="marginTopFivepixels"></div>
           <div class="row">
-            <div class="form-group">
+            <div >
               <label
                 for="inputTextDescriptionUpdate"
                 class="columns medium-3  greyText editPropertiesLabel">

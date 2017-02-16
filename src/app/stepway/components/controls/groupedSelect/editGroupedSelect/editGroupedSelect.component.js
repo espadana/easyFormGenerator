@@ -17,7 +17,7 @@ export const editGroupedSelectControlComponent = {
       <hr/>
       <div class="row">
         <div class="columns medium-12">
-          <div class="form-group">
+          <div >
             <label
               for="select"
               class=" textControlLabel">
@@ -82,7 +82,7 @@ export const editGroupedSelectControlComponent = {
       </div>
       <div class="row">
         <div>
-          <div class="form-group">
+          <div >
             <div class="columns medium-9">
               <input
                 type="text"
@@ -112,7 +112,7 @@ export const editGroupedSelectControlComponent = {
       </div>
       <div class="row">
         <div>
-          <div class="form-group">
+          <div >
             <div class="columns medium-9">
               <input
                 id="inputAddNewGroupGroupedOption"
@@ -139,7 +139,7 @@ export const editGroupedSelectControlComponent = {
         </div>
       </div>
       <div class="row">
-        <div class="form-group">
+        <div >
           <div class="columns small-3">
             <div class="container">
               <div ng-if="$ctrl.groupedSelectRowCollection.rows.length === 0">
@@ -247,7 +247,7 @@ export const editGroupedSelectControlComponent = {
       </div>
     <hr/>
     <div class="row">
-      <div class="form-group">
+      <div >
         <label
           for="inputTextLabelUpdate"
           class="columns medium-3  greyText editPropertiesLabel">
@@ -266,7 +266,7 @@ export const editGroupedSelectControlComponent = {
     <div class="marginTopFivepixels"></div>
     <div class="marginTopFivepixels"></div>
     <div class="row">
-      <div class="form-group">
+      <div >
         <label
           for="inputTextDescriptionUpdate"
           class="columns medium-3  greyText editPropertiesLabel">

@@ -15,7 +15,7 @@ export const editHeaderControlComponent = {
       <hr/>
       <div class="row">
         <div class="columns medium-12">
-          <div class="form-group">
+          <div >
             <div class="">
               <h2 class="text-center">
                 {{$ctrl.nyaSelect.temporyConfig.formlyPlaceholder}}
@@ -41,7 +41,7 @@ export const editHeaderControlComponent = {
       <hr/>
       <div class="marginTopFivepixels"></div>
       <div class="row">
-        <div class="form-group">
+        <div >
           <label
             for="inputHeaderTextUpdate"
             class="columns medium-3  greyText editPropertiesLabel">
@@ -59,7 +59,7 @@ export const editHeaderControlComponent = {
       </div>
       <div class="marginTopFivepixels"></div>
       <div class="row">
-        <div class="form-group">
+        <div >
           <label
             for="inputTextDescriptionUpdate"
             class="columns medium-3  greyText editPropertiesLabel">

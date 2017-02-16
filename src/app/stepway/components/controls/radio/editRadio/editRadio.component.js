@@ -16,7 +16,7 @@ export const editRadioControlComponent = {
       <hr/>
       <div class="row">
         <div class="columns medium-12">
-          <div class="form-group">
+          <div >
             <label
               for="basicSelect"
               class=" textControlLabel">
@@ -74,7 +74,7 @@ export const editRadioControlComponent = {
       </div>
       <div class="row">
         <div>
-          <div class="form-group">
+          <div >
             <div class="columns medium-9">
               <input
                 type="text"
@@ -102,7 +102,7 @@ export const editRadioControlComponent = {
         </div>
       </div>
         <div class="row">
-          <div class="form-group">
+          <div >
             <div class-"columns medium-12">
               <div class="container">
                 <div ng-show="$ctrl.radioRowCollection.rows.length === 0">
@@ -177,7 +177,7 @@ export const editRadioControlComponent = {
         <hr/>
         <div class="marginTopFivepixels"></div>
         <div class="row">
-          <div class="form-group">
+          <div >
             <label
               for="inputTextLabelUpdate"
               class="columns medium-3  greyText editPropertiesLabel">{{'LABEL_TEXT' | translate}} :
@@ -194,7 +194,7 @@ export const editRadioControlComponent = {
         </div>
         <div class="marginTopFivepixels"></div>
         <div class="row">
-          <div class="form-group">
+          <div >
             <label
               for="inputTextRequiredUpdate"
               class="columns medium-3  greyText editPropertiesLabel">{{'REQUIRED' | translate}} :
@@ -212,7 +212,7 @@ export const editRadioControlComponent = {
         </div>
         <div class="marginTopFivepixels"></div>
         <div class="row">
-          <div class="form-group">
+          <div >
             <label
               for="inputTextDescriptionUpdate"
               class="columns medium-3  greyText editPropertiesLabel">{{'DESCRIPTION' | translate}} :

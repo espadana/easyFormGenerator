@@ -16,7 +16,7 @@ export const editTextInputControlComponent = {
         <hr/>
         <div class="row">
           <div class="columns medium-12">
-            <div class="form-group">
+            <div >
               <label
                 for="inputText"
                 class="textControlLabel">
@@ -55,7 +55,7 @@ export const editTextInputControlComponent = {
         </div>
         <hr/>
         <div class="row">
-          <div class="form-group">
+          <div >
             <label
               for="inputTextLabelUpdate"
               class="columns medium-3 greyText editPropertiesLabel">
@@ -73,7 +73,7 @@ export const editTextInputControlComponent = {
         </div>
         <div class="marginTopFivepixels"></div>
         <div class="row">
-          <div class="form-group">
+          <div >
             <label
               for="inputTextplaceholderUpdate"
               class="columns medium-3  greyText editPropertiesLabel">
@@ -91,7 +91,7 @@ export const editTextInputControlComponent = {
         </div>
         <div class="marginTopFivepixels"></div>
         <div class="row">
-          <div class="form-group">
+          <div >
             <label
               for="inputTextRequiredUpdate"
               class="columns medium-3  greyText editPropertiesLabel">
@@ -108,7 +108,7 @@ export const editTextInputControlComponent = {
         </div>
         <div class="marginTopFivepixels"></div>
         <div class="row">
-          <div class="form-group">
+          <div >
             <label
               for="inputTextDescriptionUpdate"
               class="columns medium-3 greyText editPropertiesLabel">
@@ -126,7 +126,7 @@ export const editTextInputControlComponent = {
         </div>
         <div class="marginTopFivepixels"></div>
         <div class="row">
-          <div class="form-group">
+          <div >
             <label
               for="inputTextDefaultValueUpdate"
               class="columns medium-3 greyText editPropertiesLabel">

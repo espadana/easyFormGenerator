@@ -16,7 +16,7 @@ export const editRichTextEditorControlComponent = {
         <hr/>
         <div class="row">
           <div class="columns medium-12">
-            <div class="form-group">
+            <div >
               <label
                 for="RichTextEditor"
                 class="textControlLabel">
@@ -54,7 +54,7 @@ export const editRichTextEditorControlComponent = {
         <hr/>
     <!-- required can't be applied to rich text editor (textAngular) right now -->
     <!--<div class="row">
-          <div class="form-group">
+          <div >
             <label
               for="inputTextRequiredUpdate"
               class="columns medium-3  greyText editPropertiesLabel">Required :
@@ -71,7 +71,7 @@ export const editRichTextEditorControlComponent = {
         </div>
         <div class="marginTopFivepixels"></div>-->
         <div class="row">
-          <div class="form-group">
+          <div >
             <label
               for="inputTextDescriptionUpdate"
               class="columns medium-3  greyText editPropertiesLabel">

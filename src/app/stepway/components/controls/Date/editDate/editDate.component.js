@@ -16,7 +16,7 @@ export const editDateControlComponent = {
         <hr/>
         <div class="row">
           <div class="columns medium-12">
-            <div class="form-group">
+            <div >
               <label
                 for="inputDate"
                 class=" textControlLabel">
@@ -66,7 +66,7 @@ export const editDateControlComponent = {
         </div>
         <hr/>
         <div class="row">
-          <div class="form-group">
+          <div >
           <label class="columns medium-3  greyText editPropertiesLabel">
             {{'DATE_FORMAT' | translate}} :
           </label>
@@ -89,7 +89,7 @@ export const editDateControlComponent = {
       </div>
       <div class="marginTopFivepixels"></div>
       <div class="row">
-        <div class="form-group">
+        <div >
           <label
             for="inputTextLabelUpdate"
             class="columns medium-3  greyText editPropertiesLabel">
@@ -107,7 +107,7 @@ export const editDateControlComponent = {
       </div>
       <div class="marginTopFivepixels"></div>
         <div class="row">
-          <div class="form-group">
+          <div >
             <label
               for="inputTextRequiredUpdate"
               class="columns medium-3  greyText editPropertiesLabel">
@@ -126,7 +126,7 @@ export const editDateControlComponent = {
         </div>
         <div class="marginTopFivepixels"></div>
         <div class="row">
-          <div class="form-group">
+          <div >
             <label
               for="inputTextDescriptionUpdate"
               class="columns medium-3  greyText editPropertiesLabel">
