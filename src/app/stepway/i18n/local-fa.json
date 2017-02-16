@@ -12,14 +12,81 @@
     "PAGER_PREVIOUS"      : "قبلی",
     "PAGER_NEXT"          : "بعدی",
 
-    "COMMAND_PANEL"       : "Command",
-    "VISUAL_PANEL"        : "Visual",
+    "COMMAND_PANEL"       : "دستورات",
+    "VISUAL_PANEL"        : "نمایش",
     "ADD_NEW_LINE"        : "افزودن خط",
 
     "ADD_NEW_STEP"        : "افزودن مرحله جدید",
     "STEP_TITLE"          : "عنوان مرحله",
 
-    "SELECTED_LINE"       : "Selected line",
+    "SELECTED_LINE"       : "خط انتخاب شده",
 
-    "NUMBER_OF_COLUMN"    : "تعداد ستون ها"
+    "NUMBER_OF_COLUMN"    : "تعداد ستون ها",
+    "APPLY_CTRL2COL"      : "ثبت کنترل در ستون",
+
+    "CLIC_TAP_2_OPEN"     : "برای نمایش کنترل انتخاب شده بر روی ستوا کلیک کنید",
+    "SELECT_2_APPLY_COL"  : "Select desired control and valid to apply it to column",
+
+    "CUSTOM_SUBMIT_BTN"   : "شخصی شازی متن دکمه تایید",
+    "CUSTOM_CANCEL_BTN"   : "شحصی سازی متن دکمه انصراف",
+    "NAME_THIS_FORM"      : "نام فرم",
+    "SAVE_THIS_FORM"      : "ذخیره فرم",
+
+    "FINAL_STEP"          : "مرحله نهایی : نمایش فرم",
+
+    "DATA_MODEL"          : "DATA MODEL",
+    "FIELDS_MODEL"        : "FIELDS MODEL (Ready to save to database one)",
+
+
+    "SELECT_A_CTRL"       : "انتخاب یک کنترل",
+    "SELECT_CTRL_IN_LIST" : "یک کنترل را از لیست زیر انتخاب نمایید",
+    "COL_WILL_BE_BLANK"   : "ستوان خالی خواهد بود",
+
+    "EDIT_PROPERTIES"     : "ویرایش مشخصات",
+
+    "HEADER_TEXT"         : "متن عنوان",
+    "ADD_EDIT_HEADER_HERE": "افزودن/ویرایش عنوان ",
+
+    "SUBTITLE_TEXT"       : "متن عنوان فرعی",
+    "ADD_EDIT_SUBTIL_HERE": "افزودن/ویرایش عنوان فرعی ",
+
+    "LABEL_TEXT"          : "متن برچسب",
+    "ADD_EDIT_LABEL_HERE" : "افرودن/ویرایش برچسب کنترل",
+
+    "PLACEHOLDER"         : "متن جایگزین",
+    "ADD_EDIT_PLACEHOLD"  : "افزودن/ویرایش متن جایگزین",
+
+    "REQUIRED"            : "الزامی",
+
+    "DESCRIPTION"         : "توضیحات",
+    "ADDEDIT_DESCRIPTION" : "افزودن ویرایش توضیحات",
+
+    "DEFAULTVALUE"         : "مقدار پیشفرض",
+    "ADD_EDIT_DEFAULTVALUE_PLACEHOLD"  : "افزپدن/ویرایش متن پیش فرض",
+
+    "DATE_FORMAT"         : "فرمت تاریخ",
+
+    "ADD_NEW_RADIO"       : "افرودن دکمه radio",
+    "ADD_RADIO_PLACEHOLD" : "افرودن دکمه radio",
+    "EDIT_REMOVE_RADIO"   : "افزودن ویرایش دکمه radio",
+    "NO_RADIO_ADD_NEW"    : "افزودن مقادیر برای radio",
+
+    "SEARCH_4_OPTION"     : "جستوجو در گزینه ها",
+
+    "ADD"                 : "افزودن",
+    "ORDER"               : "مرتب سازی",
+    "OPTION"              : "گزینه ها",
+    "GROUP"               : "گروه ها",
+
+    "ADD_NEW_OPTIONS"     : "افزودن گزینه ها",
+    "EDIT_REMOVE_OPTIONS" : "افزودن گزینه جدید",
+    "NO_OPTION_ADD_NEW"   : "بدون گربنه: گزینه جدید اضافه کنید",
+
+    "ADD_NEW_GROUPS"      : "افزودن گروه جدید",
+    "ADD_A_NEW_GROUP"     : "افزودن گروه جدید",
+    "EDIT_GROUPS_OPTIONS" : "افزودن/ویرایش گروه یا گزینه",
+    "NO_GROUP_ADD_NEW"    : "افزودن گروه جدید",
+
+    "OK"                  : "تایید",
+    "CANCEL"              : "انصراف"
 }
