@@ -29,10 +29,20 @@
       <script src="./vendors/html5shiv/dist/html5shiv.min.js"></script>
       <script src="./vendors/respondJS/dest/respond.min.js"></script>
     <![endif]-->
+<!--<<<<<<< HEAD
+  </head>
+
+  <body ng-controller="demoController as demoCtrl" ng-cloak>
+    <div>
+      <eda-step-way-easy-form-gen
+            eda-easy-form-generator-model="demoCtrl.easyFormGeneratorModel"
+            eda-save-form-event="demoCtrl.saveForm(edaEasyFormGeneratorModel)">
+      </eda-step-way-easy-form-gen>
+    </div>-->
 </head>
 <!-- NOTE : ng-cloak here is not optimal solution : better to use it only where it is needed (I just take a shortcut as this an example not a production sample)  -->
 
-<body ng-controller="demoController as demoCtrl" ng-cloak>
+<body ng-controller="demoController as demoCtrl" ng-cloak style="direction: rtl">
   <div>
     <!-- Easy Form Generator (here step way) is now a ridiculous small html :
       =============================================================-->
@@ -81,8 +91,8 @@
         //demo purpose only :
         //in 3 seconds a new form will be bound to easy form generator :
         timedModelChanged();
-        console.info('Current language is ' + demoCtrl.currentLangue);
-
+        console.info('Current language is ' + demoCtrl.currentLangue);debugger;
+        switchLanguage('fa');
         function switchLanguage(toLanguage) {
           if (angular.isString) {
             easyFormSteWayConfig.setLanguage(toLanguage);

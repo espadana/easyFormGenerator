@@ -18,6 +18,7 @@ function translateConfig($translateProvider) {
   $translateProvider.translations('fa', localFa);
   $translateProvider.translations('jp', localJp);
   $translateProvider.translations('pt-br', localPtBr);
+  $translateProvider.translations('fa', localFa);
 }
 translateConfig.$inject = ['$translateProvider'];
 

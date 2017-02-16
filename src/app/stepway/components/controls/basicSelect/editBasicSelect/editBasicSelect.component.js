@@ -1,3 +1,4 @@
+
 export const EDIT_BASIC_SELECT_COMPONENT = 'editBasicSelectControl';
 
 export const editBasicSelectControlComponent = {
@@ -78,14 +79,14 @@ export const editBasicSelectControlComponent = {
             <div class="columns small-9">
             <input
               type="text"
-              class="form-control"
+              class="button"
               id="inputAddNewBasicOption"
               placeholder="{{'ADD_A_NEW_OPTION' | translate}}"
               ng-model="$ctrl.newOptionBasicSelect.saisie">
             </div>
             <div class="columns small-3">
               <button
-                class="btn btn-primary"
+                class="button"
                 ng-click="$ctrl.addNewOptionBasicSelect()">
                 {{'ADD' | translate}}
               </button>
@@ -175,7 +176,7 @@ export const editBasicSelectControlComponent = {
         </div>
         <hr/>
         <div class="row">
-          <div class="form-group">
+          <div class="">
             <label
               for="inputTextLabelUpdate"
               class="columns medium-3 greyText editPropertiesLabel">
@@ -192,7 +193,7 @@ export const editBasicSelectControlComponent = {
         </div>
         <div class="marginTopFivepixels"></div>
         <div class="row">
-          <div class="form-group">
+          <div class="">
             <label
               for="inputTextRequiredUpdate"
               class="columns medium-3 control-label greyText editPropertiesLabel">
@@ -211,7 +212,7 @@ export const editBasicSelectControlComponent = {
         </div>
         <div class="marginTopFivepixels"></div>
         <div class="row">
-          <div class="form-group">
+          <div class="">
             <label
               for="inputTextDescriptionUpdate"
               class="columns medium-3 control-label greyText editPropertiesLabel">
@@ -220,7 +221,7 @@ export const editBasicSelectControlComponent = {
             <div class="columns medium-9">
               <input
                 type="text"
-                class="form-control"
+                class=""
                 ng-model="$ctrl.nyaSelect.temporyConfig.formlyDescription"
                 id="inputTextDescriptionUpdate"
                 placeholder="{{'ADDEDIT_DESCRIPTION' | translate}}">
@@ -228,7 +229,7 @@ export const editBasicSelectControlComponent = {
           </div>
         </div>
       </div>
-    </div>
+    <!--</div>-->
   </div>
   `,
   bindings: {
@@ -254,3 +255,4 @@ const editBasicSelectModuleName = 'stepway.editBasicSelect.module';
 export default angular
                 .module(editBasicSelectModuleName, [])
                 .component(EDIT_BASIC_SELECT_COMPONENT, editBasicSelectControlComponent);
+
