@@ -1,10 +1,6 @@
-export const EDIT_BASIC_SELECT_COMPONENT = 'editBasicSelectControl';
-
-export const editBasicSelectControlComponent = {
-  template: `
-  <div class="panel panel-default">
+  {/*<div class="callout">
     <div class="panel-body">
-      <div class="row">
+      <div class="row"> 
         <div class="col-md-12">
           <h5 class="greyText">
             <i class="fa fa-eye"></i>
@@ -231,6 +227,238 @@ export const editBasicSelectControlComponent = {
         </div>
       </div>
     </div>
+  </div>*/}
+export const EDIT_BASIC_SELECT_COMPONENT = 'editBasicSelectControl';
+
+export const editBasicSelectControlComponent = {
+  template: `
+  <div class="callout">
+  <div class="row"> 
+    <div class="medium-12 columns">
+      <h5 class="greyText">
+        <i class="fa fa-eye"></i>
+        &nbsp;
+        {{'PREVIEW_TAB' | translate}} :
+      </h5>
+    </div>
+  </div>
+  <hr/>
+  <div class="row">
+    <div class="medium-12 columns">
+      <div class="">
+        <label
+          for="basicSelect"
+          class="textControlLabel">
+          {{$ctrl.nyaSelect.temporyConfig.formlyLabel}}
+          <span
+            ng-if="$ctrl.nyaSelect.temporyConfig.formlyRequired"
+            class="textControlLabel">
+            *
+          </span>
+        </label>
+        <div class="">
+          <ol
+            class="nya-bs-select small-12  medium-12 large-12 columns"
+            ng-model="$ctrl.modelbasicSelect"
+            id="basicSelect"
+            disabled="$ctrl.basicSelectRowCollection.rows.length === 0">
+            <li
+              class="nya-bs-option"
+              nya-bs-option="basicSelectRow in $ctrl.basicSelectRowCollection.rows"
+              value="$index">
+              <a>
+                {{basicSelectRow.option}}
+              </a>
+            </li>
+          </ol>
+          <p class="help-block">
+            {{$ctrl.nyaSelect.temporyConfig.formlyDescription}}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="callout">
+    <!--<div class="panel-body">-->
+      <div class="row">
+        <div class="medium-12 columns">
+          <h5 class="greyText">
+            <i class="fa fa-pencil-square-o"></i>
+            &nbsp;
+            {{'EDIT_PROPERTIES' | translate}} :
+          </h5>
+        </div>
+      </div>
+      <hr/>
+      <div class="row">
+        <div class="large-3 medium-3">
+          <label
+            for="basicSelectRowCollection"
+            class=" control-label greyText editPropertiesLabel">
+            {{'ADD_NEW_OPTIONS' | translate}} :
+          </label>
+        </div>
+      </div>
+      <div class="row">
+        <div>
+          <div class="">
+            <div class="columns small-9 medium-9 large-9">
+            <input
+              type="text"
+              class="button"
+              id="inputAddNewBasicOption"
+              placeholder="{{'ADD_A_NEW_OPTION' | translate}}"
+              ng-model="$ctrl.newOptionBasicSelect.saisie">
+            </div>
+            <div class="small-3 medium-3 large-3 columns">
+              <button
+                class="button"
+                ng-click="$ctrl.addNewOptionBasicSelect()">
+                {{'ADD' | translate}}
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="large-3 columns">
+          <label class=" greyText editPropertiesLabel">
+            {{'EDIT_REMOVE_OPTIONS' | translate}} :
+          </label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="form-group">
+          <div class-"large-12 medium-12 small-12">
+            <div class="container">
+              <div ng-if="$ctrl.basicSelectRowCollection.rows.length === 0">
+                <h5 class="text-center greyText">
+                  <em>
+                    - {{'NO_OPTION_ADD_NEW' | translate}} -
+                  </em>
+                </h5>
+              </div>
+              <table
+                ng-if="$ctrl.basicSelectRowCollection.rows.length > 0"
+                class="">
+                <thead>
+                  <tr>
+                    <th st-ratio="20">
+                      {{'ORDER' | translate}}
+                    </th>
+                    <th st-ratio="55">
+                      {{'OPTION' | translate}}
+                    </th>
+                    <th st-ratio="25">
+                    </th>
+                  </tr>
+                  <tr>
+                    <th st-ratio="20">
+                    </th>
+                    <th st-ratio="55">
+                      <input
+                        ng-model="$ctrl.basicSelectFilter"
+                        placeholder="{{'SEARCH_4_OPTION' | translate}}"
+                        class="input-sm form-control"
+                        type="search"
+                      />
+                    </th>
+                    <th st-ratio="25">
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr ng-repeat="basicSelectRow in $ctrl.basicSelectRowCollection.rows | filter:$ctrl.basicSelectFilter as basicSelectRow">
+                      <td st-ratio="20">
+                        {{$index}}
+                      </td>
+                      <td st-ratio="55">
+                        {{basicSelectRow.option}}
+                      </td>
+                      <td st-ratio="25">
+                        <div class="pull-right">
+                          <button
+                            class="button"
+                            ng-click="$ctrl.upThisRow({index: $index})">
+                            <i class="fa fa-arrow-up"></i>
+                          </button>
+                          <button
+                            class="button"
+                            ng-click="$ctrl.downThisRow({index: $index})">
+                            <i class="fa fa-arrow-down"></i>
+                          </button>
+                          <button
+                            class="button alert"
+                            ng-click="$ctrl.removeRow({index: $index})">
+                            <i class="fa fa-trash-o"></i>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr/>
+        <div class="row">
+          <div class="">
+            <label
+              for="inputTextLabelUpdate"
+              class="large-3 columns  greyText editPropertiesLabel">
+              {{'LABEL_TEXT' | translate}} :
+            </label>
+            <div class="large-9 columns">
+              <input
+                type="text"
+                class=""
+                ng-model="$ctrl.nyaSelect.temporyConfig.formlyLabel"
+                id="inputTextLabelUpdate"
+                placeholder="{{'ADD_EDIT_LABEL_HERE' | translate}}">
+            </div>
+          </div>
+        </div>
+        <div class="marginTopFivepixels"></div>
+        <div class="row">
+          <div class="">
+            <label
+              for="inputTextRequiredUpdate"
+              class="large-3 columns greyText editPropertiesLabel">
+              Required :
+            </label>
+            <div class="large-9 colums">
+              <div class="checkboxCssCorrection">
+                &nbsp;
+              </div>
+              <input
+                type="checkbox"
+                ng-model="nyaSelect.temporyConfig.formlyRequired"
+                id="inputTextRequiredUpdate">
+            </div>
+          </div>
+        </div>
+        <div class="marginTopFivepixels"></div>
+        <div class="row">
+          <div class="">
+            <label
+              for="inputTextDescriptionUpdate"
+              class="large-3 greyText editPropertiesLabel">
+              {{'DESCRIPTION' | translate}} :
+            </label>
+            <div class="large-9">
+              <input
+                type="text"
+                class=""
+                ng-model="$ctrl.nyaSelect.temporyConfig.formlyDescription"
+                id="inputTextDescriptionUpdate"
+                placeholder="{{'ADDEDIT_DESCRIPTION' | translate}}">
+            </div>
+          </div>
+        </div>
+      </div>
+    <!--</div>-->
   </div>
   `,
   bindings: {
