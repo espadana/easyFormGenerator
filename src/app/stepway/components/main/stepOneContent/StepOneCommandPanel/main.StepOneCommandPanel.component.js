@@ -25,14 +25,14 @@ export const StepOneCommandPanelComponent = {
           </div>
         </div>
         <div class="row">
-          <div class="columns small-2 small-offset-3">
+          <div class="columns small-2">
             <button
               class="button primary float-right btnMinusColumns"
               ng-click="$ctrl.decreaseNumberOfColumns()">
               <i class="fa fa-minus fa-1x"></i>
             </button>
           </div>
-          <div class="columns small-2 text-center">
+          <div class="columns small-2 small-offset-3 text-center">
             <span class="numberOfColumnsLabel ">
               {{$ctrl.configuration.lines[$ctrl.configuration.activeLine -1].columns.length}}
             </span>
