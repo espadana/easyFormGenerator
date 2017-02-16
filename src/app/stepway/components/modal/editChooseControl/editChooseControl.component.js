@@ -14,7 +14,7 @@ export const editChooseControlComponent = {
         <span>
           {{ option.name }}
         </span>
-        <span class="glyphicon glyphicon-ok check-mark"></span>
+        <span class="fa fa-check"></span>
       </a>
     </li>
   </ol>

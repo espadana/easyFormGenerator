@@ -30,7 +30,7 @@ export const editDateControlComponent = {
               <div class="">
                 <div class="input-group" >
                   <span class="input-group-label">
-                    <i class="glyphicon glyphicon-calendar"></i>
+                    <i class="fa fa-calendar"></i>
                   </span>
                   <input
                     type="text"

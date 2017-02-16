@@ -74,7 +74,7 @@ export const groupedSelectTemplate = {
           <span>
             {{option.name}}
           </span>
-          <span class="glyphicon glyphicon-ok check-mark"></span>
+          <span class="fa fa-check"></span>
         </a>
       </li>
     </ol>
@@ -89,7 +89,7 @@ export const datepickerTemplate = {
           type="button"
           class="button"
           ng-click="datepicker.open($event)">
-          <i class="glyphicon glyphicon-calendar"></i>
+          <i class="fa fa-check"></i>
         </button>
       </span>
       <input

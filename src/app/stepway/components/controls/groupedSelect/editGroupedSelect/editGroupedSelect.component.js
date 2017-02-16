@@ -44,7 +44,7 @@ export const editGroupedSelectControlComponent = {
                     <span>
                       {{groupedSelectRow.option}}
                     </span>
-                    <span class="glyphicon glyphicon-ok check-mark">
+                    <span class="fa fa-check">
                     </span>
                   </a>
                 </li>
