@@ -2,30 +2,29 @@ export const PAGER_COMPONENT_NAME = 'edapager';
 
 export const pagerComponent = {
   template: `
-  <ul class="pager">
-    <li ng-class="{'disabled':$ctrl.stepIndicators[0]}" ng-if="$ctrl.configuration.configStepCounter > 0">
+  <div class="row">
+    <div class="columns small-2" ng-class="{'disabled':$ctrl.stepIndicators[0]}" ng-if="$ctrl.configuration.configStepCounter > 0">
       <button
-          class="button primary customPagerButton"
+          class="button primary customPagerButton "
           ng-click="$ctrl.previousConfigStep()" >
         <i class="fa fa-arrow-right fa-2x float-right"></i>
         <span class="float-left">
           {{'PAGER_PREVIOUS' | translate}}
         </span>
       </button>
-    </li>
-    <li
-      ng-class="{'disabled':$ctrl.stepIndicators[3]}"
+    </div>
+    <div class="columns small-2" ng-class="{'disabled':$ctrl.stepIndicators[3]}"
       ng-if="($ctrl.configuration.configStepCounter < 3 && !$ctrl.configuration.isWizard) || ($ctrl.configuration.configStepCounter < 2 && $ctrl.configuration.isWizard) ">
-      <button
-        class="button primary customPagerButton"
-        ng-click="$ctrl.nextConfigStep()">
-        <span class="float-right">
-          {{'PAGER_NEXT' | translate}}
-        </span>
-        <i class="fa fa-arrow-left fa-2x float-left"></i>
-      </button>
-    </li>
-  </ul>
+        <button
+          class="button primary customPagerButton "
+          ng-click="$ctrl.nextConfigStep()">
+          <span class="float-right">
+            {{'PAGER_NEXT' | translate}}
+          </span>
+          <i class="fa fa-arrow-left fa-2x float-left"></i>
+        </button>
+    </div>
+  </div>
   `,
   bindings: {
     stepIndicators:     '<',
