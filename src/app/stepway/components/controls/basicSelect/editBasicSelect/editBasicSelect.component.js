@@ -28,21 +28,20 @@ export const editBasicSelectControlComponent = {
                 *
               </span>
             </label>
-            <div class="">
-              <ol
-                class="nya-bs-select columns small-12"
+            <div class="row">
+              <select
+                class="columns small-12"
                 ng-model="$ctrl.modelbasicSelect"
                 id="basicSelect"
-                disabled="$ctrl.basicSelectRowCollection.rows.length === 0">
-                <li
-                  class="nya-bs-option"
-                  nya-bs-option="basicSelectRow in $ctrl.basicSelectRowCollection.rows"
+                ng-if="$ctrl.basicSelectRowCollection.rows.length > 0">
+                <option
+                  class=""
+                  ng-repeat="basicSelectRow in $ctrl.basicSelectRowCollection.rows"
                   value="$index">
-                  <a>
                     {{basicSelectRow.option}}
-                  </a>
-                </li>
-              </ol>
+                </option>
+              </select>
+            </div>
               <p class="help-text">
                 {{$ctrl.nyaSelect.temporyConfig.formlyDescription}}
               </p>
@@ -182,7 +181,7 @@ export const editBasicSelectControlComponent = {
               class="columns medium-3 greyText editPropertiesLabel">
               {{'LABEL_TEXT' | translate}} :
             </label>
-            <div class="columns medium-3">
+            <div class="columns medium-9">
               <input
                 type="text"
                 ng-model="$ctrl.nyaSelect.temporyConfig.formlyLabel"
@@ -199,7 +198,7 @@ export const editBasicSelectControlComponent = {
               class="columns medium-3  greyText editPropertiesLabel">
               Required :
             </label>
-            <div class="columns large-3">
+            <div class="columns large-9">
               <div class="checkboxCssCorrection">
                 &nbsp;
               </div>
