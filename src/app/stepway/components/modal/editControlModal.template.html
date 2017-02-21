@@ -125,6 +125,18 @@
       </edit-basic-select-control>
     </div>
 
+    <div ng-switch-when="AsyncSelect">
+      <edit-async-select-control
+        nya-select="editControlModCtrl.nyaSelect"
+        basic-select-row-collection="editControlModCtrl.basicSelectRowCollection"
+        new-option-basic-select="editControlModCtrl.newOptionBasicSelect"
+        add-new-option-basic-select="editControlModCtrl.addNewOptionBasicSelect()"
+        up-this-row="editControlModCtrl.upThisRow(index)"
+        down-this-row="editControlModCtrl.downThisRow(index)"
+        remove-row="editControlModCtrl.removeRow(index)">
+      </edit-async-select-control>
+    </div>
+
     <div ng-switch-when="GroupedSelect">
       <edit-grouped-select-control
         nya-select="editControlModCtrl.nyaSelect"

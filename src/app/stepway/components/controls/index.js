@@ -16,6 +16,9 @@ import editEmailControlModule, {editEmailControlComponent, EDIT_EMAIL_COMPONENT}
 import { BasicSelectConfig } from './basicSelect/config/basicSelect.config';
 import editBasicSelectModule, { editBasicSelectControlComponent, EDIT_BASIC_SELECT_COMPONENT } from './basicSelect/editBasicSelect/editBasicSelect.component';
 
+import { AsyncSelectConfig } from './asyncSelect/config/asyncSelect.config';
+import editAsyncSelectModule, { editAsyncSelectControlComponent, EDIT_ASYNC_SELECT_COMPONENT } from './AsyncSelect/editAsyncSelect/editAsyncSelect.component';
+
 import { GroupedSelectConfig } from './groupedSelect/config/groupedSelect.config';
 import editGroupedSelectModule, {editGroupedSelectControlComponent, EDIT_GROUPED_SELECT_COMPONENT} from './groupedSelect/editGroupedSelect/editGroupedSelect.component';
 
@@ -55,7 +58,8 @@ const configs = [
   RichTextEditorConfig,
   SubTitleConfig,
   TextAreaConfig,
-  TextInputConfig
+  TextInputConfig,
+  AsyncSelectConfig
 ];
 
 // controls component (for edit control modal)
@@ -83,6 +87,12 @@ const controls = [
     name: EDIT_BASIC_SELECT_COMPONENT,
     component: editBasicSelectControlComponent,
     moduleName: editBasicSelectModule.name
+  },
+  // editAsyncSelect:
+  {
+    name: EDIT_ASYNC_SELECT_COMPONENT,
+    component: editAsyncSelectControlComponent,
+    moduleName: editAsyncSelectModule.name
   },
   // editGroupedSelect:
   {

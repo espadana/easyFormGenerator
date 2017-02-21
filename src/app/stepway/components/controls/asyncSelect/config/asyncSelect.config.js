@@ -1,10 +1,10 @@
-export const BasicSelectConfig = {
-  id: 'BasicSelect',
-  name: 'Basic select',
-  subtitle: 'Basic select',
+export const AsyncSelectConfig = {
+  id: 'AsyncSelect',
+  name: 'Async select',
+  subtitle: 'Async select',
   options: [],
   group: 'Select',
-  formlyType: 'basicSelect',
+  formlyType: 'asyncSelect',
   formlySubtype: '',
   formlyLabel: '',
   formlyRequired: false,

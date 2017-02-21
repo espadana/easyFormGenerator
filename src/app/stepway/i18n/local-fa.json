@@ -86,7 +86,8 @@
     "ADD_A_NEW_GROUP"     : "افزودن گروه جدید",
     "EDIT_GROUPS_OPTIONS" : "افزودن/ویرایش گروه یا گزینه",
     "NO_GROUP_ADD_NEW"    : "افزودن گروه جدید",
-
+    "SOURCE_TEXT"         : "منبع",
+    
     "OK"                  : "تایید",
     "CANCEL"              : "انصراف"
 }

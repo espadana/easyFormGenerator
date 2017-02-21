@@ -242,10 +242,10 @@ export const editBasicSelectControlComponent = {
   },
   controller:
   class editBasicSelectController {
-    static $inject = [];
+    static $inject = ["$scope"];
 
-    constructor() {
-
+    constructor($scope) {
+      console.log(this);
     }
   }
 };
