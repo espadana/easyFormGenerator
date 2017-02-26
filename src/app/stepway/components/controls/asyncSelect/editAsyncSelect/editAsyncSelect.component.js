@@ -16,7 +16,7 @@ export const editAsyncSelectControlComponent = {
       <div class='columns medium-12'>
         <div><label class=' textControlLabel' for='AsyncSelect'> {{$ctrl.nyaSelect.temporyConfig.formlyLabel}} <span class='textControlLabel' ng-if='$ctrl.nyaSelect.temporyConfig.formlyRequired'> * </span> </label>
           <div class='row'>
-            <select  id='asyncSelect' class='columns small-12'> 
+            <select ng-model="$ctrl.testModel" ng-options="item as item.value for item in $ctrl.asyncSelectModel track by item.key" id='asyncSelect' class='columns small-12'> 
             </select></div>
           <p class='help-text'>{{$ctrl.nyaSelect.temporyConfig.formlyDescription}}</p>
         </div>
@@ -35,7 +35,7 @@ export const editAsyncSelectControlComponent = {
     <hr />
     <div class='row'>
       <div class=''><label class='columns medium-3 greyText editPropertiesLabel' for='inputTextLabelUpdate'> {{'LABEL_TEXT' | translate}} : </label>
-        <div class='columns medium-9'><input id='inputTextLabelUpdate' type='text' placeholder='{{'ADD_EDIT_LABEL_HERE' | translate}}' ng-model='$ctrl.nyaSelect.temporyConfig.formlyLabel'
+        <div class='columns medium-9'><input id='inputTextLabelUpdate' type='text' placeholder='{{ADD_EDIT_LABEL_HERE' | translate}}' ng-model='$ctrl.nyaSelect.temporyConfig.formlyLabel'
           /></div>
       </div>
     </div>
@@ -51,7 +51,7 @@ export const editAsyncSelectControlComponent = {
     <div class='row'>
       <div class=''><label class='columns medium-3  greyText editPropertiesLabel' for='inputTextDescriptionUpdate'> {{'DESCRIPTION' | translate}} : </label>
         <div class='columns medium-9'><input ng-model='$ctrl.nyaSelect.temporyConfig.formlyDescription' id='inputTextDescriptionUpdate' class='' type='text'
-            placeholder='{{'ADDEDIT_DESCRIPTION' | translate}}' /></div>
+            placeholder='{{ADDEDIT_DESCRIPTION' | translate}}' /></div>
         <div class='columns medium-9'>&nbsp;</div>
       </div>
     </div>
@@ -79,7 +79,6 @@ export const editAsyncSelectControlComponent = {
 
     constructor($http,) {
       var vm = this;
-debugger;
       const hostName = window.location.hostname;
       const protocol = window.location.protocol + '//';
       const port = 'http://localhost:5000/api/';
@@ -106,8 +105,8 @@ debugger;
         // console.log(vm.endPointModel);
         // console.log(protocol + hostName + ':' + port + '/api' + vm.selectedAPI.link);
         $http.get(port + vm.selectedAPI.link ).then(
-          function(data) {
-            asyncSelectModel = data;
+          function(data) {debugger;
+            vm.asyncSelectModel = data.data.entity;
           }
         );
         /* eslint-enable no-console */
